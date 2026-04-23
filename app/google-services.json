@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "131843673839",
+    "project_id": "jerkg-681fc",
+    "storage_bucket": "jerkg-681fc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131843673839:android:f40a8f09a2160717e5151a",
+        "android_client_info": {
+          "package_name": "com.jerkg.marketplace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmG8-Kf8CoJU2es8NCCTIfX-Pff-JQus4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

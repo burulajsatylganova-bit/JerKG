@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Файл: app/src/main/res/values/strings.xml (русский — по умолчанию) -->
+<resources>
+    <string name="app_name">ЖЕР КГ</string>
+    <string name="tagline">Маркетплейс Кыргызстана</string>
+
+    <!-- Авторизация -->
+    <string name="auth_enter_phone">Введите номер телефона</string>
+    <string name="auth_phone_hint">Мы отправим вам SMS с кодом подтверждения</string>
+    <string name="auth_get_code">Получить код</string>
+    <string name="auth_enter_code">Введите код из SMS</string>
+    <string name="auth_login">Войти</string>
+    <string name="auth_change_phone">Изменить номер телефона</string>
+    <string name="auth_sms_sent">SMS отправлена</string>
+
+    <!-- Главный экран -->
+    <string name="home_search_hint">Поиск объявлений...</string>
+    <string name="home_categories">Категории</string>
+    <string name="home_all_ads">Все объявления</string>
+    <string name="add_ad">+ Добавить</string>
+
+    <!-- Категории -->
+    <string name="cat_realty">Недвижимость</string>
+    <string name="cat_work">Работа</string>
+    <string name="cat_clothes">Одежда</string>
+    <string name="cat_cars">Автомобили</string>
+    <string name="cat_animals">Животные и скот</string>
+    <string name="cat_electronics">Электроника</string>
+    <string name="cat_companion">Попутчик</string>
+    <string name="cat_services">Услуги</string>
+
+    <!-- Регионы -->
+    <string name="region_bishkek">Бишкек</string>
+    <string name="region_osh">Ош</string>
+    <string name="region_chui">Чуйская область</string>
+    <string name="region_issykkul">Иссык-Кульская область</string>
+    <string name="region_naryn">Нарынская область</string>
+    <string name="region_talas">Таласская область</string>
+    <string name="region_jalal">Джалал-Абадская область</string>
+    <string name="region_batken">Баткенская область</string>
+
+    <!-- Объявление -->
+    <string name="ad_price">Цена</string>
+    <string name="ad_location">Местоположение</string>
+    <string name="ad_call">Позвонить</string>
+    <string name="ad_chat">Написать</string>
+    <string name="ad_favorite">В избранное</string>
+    <string name="ad_edit">Редактировать</string>
+    <string name="ad_delete">Удалить</string>
+    <string name="ad_publish">Опубликовать</string>
+
+    <!-- Навигация -->
+    <string name="nav_home">Главная</string>
+    <string name="nav_search">Поиск</string>
+    <string name="nav_add">Добавить</string>
+    <string name="nav_favorites">Избранное</string>
+    <string name="nav_profile">Профиль</string>
+
+    <!-- Ошибки -->
+    <string name="error_network">Нет подключения к интернету</string>
+    <string name="error_invalid_code">Неверный код. Попробуйте снова.</string>
+    <string name="error_fill_all_fields">Заполните все поля</string>
+</resources>

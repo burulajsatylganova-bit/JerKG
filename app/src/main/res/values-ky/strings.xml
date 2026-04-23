@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Файл: app/src/main/res/values-ky/strings.xml (кыргызский перевод) -->
+<resources>
+    <string name="app_name">ЖЕР КГ</string>
+    <string name="tagline">Кыргызстандын маркетплейси</string>
+
+    <!-- Авторизация -->
+    <string name="auth_enter_phone">Телефон номерин киргизиңиз</string>
+    <string name="auth_phone_hint">Биз сизге SMS аркылуу ырастоо кодун жөнөтөбүз</string>
+    <string name="auth_get_code">Код алуу</string>
+    <string name="auth_enter_code">SMS коддун киргизиңиз</string>
+    <string name="auth_login">Кирүү</string>
+    <string name="auth_change_phone">Телефон номерин өзгөртүү</string>
+    <string name="auth_sms_sent">SMS жөнөтүлдү</string>
+
+    <!-- Главный экран -->
+    <string name="home_search_hint">Жарнамаларды издөө...</string>
+    <string name="home_categories">Категориялар</string>
+    <string name="home_all_ads">Бардык жарнамалар</string>
+    <string name="add_ad">+ Кошуу</string>
+
+    <!-- Категории -->
+    <string name="cat_realty">Кыймылсыз мүлк</string>
+    <string name="cat_work">Жумуш</string>
+    <string name="cat_clothes">Кийим</string>
+    <string name="cat_cars">Автоунаа</string>
+    <string name="cat_animals">Мал жана жаныбарлар</string>
+    <string name="cat_electronics">Электроника</string>
+    <string name="cat_companion">Каттам</string>
+    <string name="cat_services">Кызматтар</string>
+
+    <!-- Регионы -->
+    <string name="region_bishkek">Бишкек</string>
+    <string name="region_osh">Ош</string>
+    <string name="region_chui">Чүй областы</string>
+    <string name="region_issykkul">Ысык-Көл областы</string>
+    <string name="region_naryn">Нарын областы</string>
+    <string name="region_talas">Талас областы</string>
+    <string name="region_jalal">Жалал-Абад областы</string>
+    <string name="region_batken">Баткен областы</string>
+
+    <!-- Объявление -->
+    <string name="ad_price">Баасы</string>
+    <string name="ad_location">Жери</string>
+    <string name="ad_call">Чалуу</string>
+    <string name="ad_chat">Жазуу</string>
+    <string name="ad_favorite">Сактоо</string>
+    <string name="ad_edit">Түзөтүү</string>
+    <string name="ad_delete">Жок кылуу</string>
+    <string name="ad_publish">Жарыялоо</string>
+
+    <!-- Навигация -->
+    <string name="nav_home">Башкы бет</string>
+    <string name="nav_search">Издөө</string>
+    <string name="nav_add">Кошуу</string>
+    <string name="nav_favorites">Сакталган</string>
+    <string name="nav_profile">Профиль</string>
+
+    <!-- Ошибки -->
+    <string name="error_network">Интернет байланышы жок</string>
+    <string name="error_invalid_code">Код туура эмес. Кайра аракет кылыңыз.</string>
+    <string name="error_fill_all_fields">Бардык талааларды толтуруңуз</string>
+</resources>

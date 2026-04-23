@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Файл: app/src/main/res/layout/item_ad.xml -->
+<!-- Карточка объявления в сетке 2 колонки -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Фото + кнопка избранного -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <ImageView
+                android:id="@+id/ivAdPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_image_placeholder"
+                android:background="@color/border_color" />
+
+            <!-- Кнопка избранного -->
+            <ImageView
+                android:id="@+id/ivFavorite"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="top|end"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_favorite_outline"
+                android:background="@drawable/bg_circle_white"
+                android:padding="6dp"
+                android:elevation="4dp" />
+
+        </FrameLayout>
+
+        <!-- Информация о объявлении -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Название -->
+            <TextView
+                android:id="@+id/tvAdTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Название объявления"
+                android:textSize="13sp"
+                android:textColor="@color/text_primary"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="6dp" />
+
+            <!-- Цена -->
+            <TextView
+                android:id="@+id/tvAdPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 сом"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/brand_blue"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Местоположение -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ic_location"
+                    android:layout_marginEnd="3dp" />
+
+                <TextView
+                    android:id="@+id/tvAdLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Бишкек"
+                    android:textSize="11sp"
+                    android:textColor="@color/text_tertiary"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

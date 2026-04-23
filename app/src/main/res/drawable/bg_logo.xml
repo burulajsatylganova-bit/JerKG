@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Файл: app/src/main/res/drawable/bg_logo.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="#1A6EFF"
+        android:endColor="#00C896"
+        android:angle="135"
+        android:type="linear" />
+    <corners android:radius="20dp" />
+</shape>

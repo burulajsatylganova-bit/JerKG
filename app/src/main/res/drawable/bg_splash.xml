@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Файл: app/src/main/res/drawable/bg_splash.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="#0A1628"
+        android:centerColor="#1A3A6E"
+        android:endColor="#0052D4"
+        android:angle="160"
+        android:type="linear" />
+</shape>

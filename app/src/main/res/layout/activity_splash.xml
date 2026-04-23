@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Файл: app/src/main/res/layout/activity_splash.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg_splash"
+    android:padding="32dp">
+
+    <!-- Логотип -->
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_logo"
+        android:background="@drawable/bg_logo"
+        android:padding="18dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Название -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ЖЕР КГ"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:letterSpacing="-0.02"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="МАРКЕТПЛЕЙС КЫРГЫЗСТАНА"
+        android:textSize="11sp"
+        android:textColor="#99FFFFFF"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="64dp" />
+
+    <!-- Блок выбора языка — изначально скрыт -->
+    <LinearLayout
+        android:id="@+id/layoutLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@drawable/bg_card_white"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выберите язык / Тилди тандаңыз"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/brand_dark"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Русский -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRussian"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="🇷🇺  Русский"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/brand_blue"
+            app:cornerRadius="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Кыргызский -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnKyrgyz"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="🇰🇬  Кыргызча"
+            android:textSize="16sp"
+            android:textColor="@color/brand_blue"
+            app:backgroundTint="@android:color/transparent"
+            app:strokeColor="@color/brand_blue"
+            app:strokeWidth="2dp"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Файл: app/src/main/res/values/colors.xml -->
+<!-- Цвета соответствуют дизайну из HTML макета JER KG -->
+<resources>
+    <!-- Основные цвета бренда -->
+    <color name="brand_blue">#1A6EFF</color>
+    <color name="brand_blue_dark">#0052D4</color>
+    <color name="brand_emerald">#00C896</color>
+    <color name="brand_dark">#0A1628</color>
+    <color name="brand_mid">#1E2D4A</color>
+
+    <!-- Фон -->
+    <color name="background_primary">#F7F9FC</color>
+    <color name="background_card">#FFFFFF</color>
+
+    <!-- Текст -->
+    <color name="text_primary">#0A1628</color>
+    <color name="text_secondary">#4A5568</color>
+    <color name="text_tertiary">#8A94A6</color>
+
+    <!-- Другие -->
+    <color name="border_color">#E8EDF5</color>
+    <color name="badge_blue_bg">#E8F0FF</color>
+    <color name="badge_green_bg">#E0F9F1</color>
+    <color name="error_red">#FF3B30</color>
+    <color name="success_green">#00C896</color>
+</resources>

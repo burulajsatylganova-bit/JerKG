@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Файл: app/src/main/res/layout/fragment_ad_detail.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_primary">
+
+    <!-- Тулбар с кнопкой назад -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background_card"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="Объявление"
+        app:titleTextColor="@color/text_primary" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="48dp"
+        android:indeterminateTint="@color/brand_blue" />
+
+    <!-- Прокручиваемое содержимое -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Слайдер фотографий -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="@color/border_color">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPagerPhotos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+                <!-- Заглушка когда нет фото -->
+                <ImageView
+                    android:id="@+id/ivNoPhoto"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_image_placeholder"
+                    android:alpha="0.3" />
+
+                <!-- Точки-индикатор слайдера -->
+                <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                    android:id="@+id/dotsIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="12dp"
+                    app:dotsColor="@color/brand_blue"
+                    app:dotsSize="6dp"
+                    app:dotsSpacing="4dp" />
+
+            </FrameLayout>
+
+            <!-- Основная информация -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/background_card"
+                android:layout_marginBottom="8dp">
+
+                <!-- Цена -->
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 сом"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/brand_blue"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Название -->
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Название объявления"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_primary"
+                    android:lineSpacingMultiplier="1.3"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Регион -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="4dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_location"
+                        android:layout_marginEnd="4dp" />
+
+                    <TextView
+                        android:id="@+id/tvRegion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Бишкек"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_secondary" />
+
+                </LinearLayout>
+
+                <!-- Просмотры -->
+                <TextView
+                    android:id="@+id/tvViews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Просмотры: 0"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_tertiary" />
+
+            </LinearLayout>
+
+            <!-- Описание -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/background_card"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Описание"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:lineSpacingMultiplier="1.5" />
+
+            </LinearLayout>
+
+            <!-- Действия для гостя: звонок, чат, избранное -->
+            <LinearLayout
+                android:id="@+id/layoutGuestActions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/background_card"
+                android:layout_marginBottom="8dp">
+
+                <!-- Позвонить -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCall"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="Позвонить"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="@color/success_green"
+                    app:cornerRadius="12dp"
+                    app:icon="@drawable/ic_phone"
+                    app:iconTint="@android:color/white"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- В чат -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnChat"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="Написать продавцу"
+                    android:textSize="15sp"
+                    android:textColor="@color/brand_blue"
+                    app:backgroundTint="@color/badge_blue_bg"
+                    app:strokeColor="@color/brand_blue"
+                    app:strokeWidth="1dp"
+                    app:cornerRadius="12dp"
+                    app:icon="@drawable/ic_chat"
+                    app:iconTint="@color/brand_blue"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- В избранное -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFavorite"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="В избранное"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    app:backgroundTint="@android:color/transparent"
+                    app:strokeColor="@color/border_color"
+                    app:iconTint="@color/text_secondary" />
+
+            </LinearLayout>
+
+            <!-- Действия автора: редактировать, удалить -->
+            <LinearLayout
+                android:id="@+id/layoutOwnerActions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@color/background_card"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:text="Редактировать"
+                    android:textSize="14sp"
+                    android:textColor="@color/brand_blue"
+                    app:backgroundTint="@color/badge_blue_bg"
+                    app:cornerRadius="12dp"
+                    android:layout_marginEnd="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:text="Удалить"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="@color/error_red"
+                    app:cornerRadius="12dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
