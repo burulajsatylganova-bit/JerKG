@@ -1,4 +1,3 @@
-// Файл: app/src/main/java/com/jerkg/marketplace/data/repository/AdRepository.java
 package com.jerkg.marketplace.data.repository;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -10,10 +9,7 @@ import com.jerkg.marketplace.data.model.Ad;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * AdRepository — весь код работы с объявлениями в Firestore.
- * Поддерживает: загрузку, фильтрацию по категории и региону, поиск.
- */
+
 public class AdRepository {
 
     private final FirebaseFirestore db;
@@ -23,10 +19,6 @@ public class AdRepository {
         db = FirebaseFirestore.getInstance();
         auth = FirebaseAuth.getInstance();
     }
-
-    // ─────────────────────────────────────────────
-    // Callback интерфейсы
-    // ─────────────────────────────────────────────
 
     public interface AdsCallback {
         void onSuccess(List<Ad> ads);
@@ -43,13 +35,7 @@ public class AdRepository {
         void onError(String message);
     }
 
-    // ─────────────────────────────────────────────
-    // Получение объявлений
-    // ─────────────────────────────────────────────
 
-    /**
-     * Загружает все активные объявления, сортированные по дате (новые первые).
-     */
     public void getAllAds(AdsCallback callback) {
         db.collection("ads")
                 .whereEqualTo("active", true)
@@ -63,9 +49,7 @@ public class AdRepository {
                 .addOnFailureListener(e -> callback.onError(e.getMessage()));
     }
 
-    /**
-     * Объявления по категории.
-     */
+
     public void getAdsByCategory(String categoryId, AdsCallback callback) {
         db.collection("ads")
                 .whereEqualTo("active", true)
@@ -79,9 +63,7 @@ public class AdRepository {
                 .addOnFailureListener(e -> callback.onError(e.getMessage()));
     }
 
-    /**
-     * Объявления по региону.
-     */
+
     public void getAdsByRegion(String region, AdsCallback callback) {
         db.collection("ads")
                 .whereEqualTo("active", true)
@@ -95,9 +77,7 @@ public class AdRepository {
                 .addOnFailureListener(e -> callback.onError(e.getMessage()));
     }
 
-    /**
-     * Объявления по категории И региону.
-     */
+
     public void getAdsByCategoryAndRegion(String categoryId, String region, AdsCallback callback) {
         db.collection("ads")
                 .whereEqualTo("active", true)
@@ -112,10 +92,7 @@ public class AdRepository {
                 .addOnFailureListener(e -> callback.onError(e.getMessage()));
     }
 
-    /**
-     * Поиск по ключевым словам (клиентская фильтрация — Firestore не поддерживает full-text search).
-     * Для продакшна рекомендуется Algolia или Firebase Extension.
-     */
+
     public void searchAds(String query, AdsCallback callback) {
         // Загружаем все и фильтруем на клиенте
         getAllAds(new AdsCallback() {
@@ -138,10 +115,6 @@ public class AdRepository {
             }
         });
     }
-
-    /**
-     * Объявления текущего пользователя (для профиля).
-     */
     public void getMyAds(AdsCallback callback) {
         String uid = auth.getCurrentUser() != null ? auth.getCurrentUser().getUid() : null;
         if (uid == null) {
@@ -151,6 +124,7 @@ public class AdRepository {
 
         db.collection("ads")
                 .whereEqualTo("userId", uid)
+                .whereEqualTo("active", true)
                 .orderBy("createdAt", Query.Direction.DESCENDING)
                 .get()
                 .addOnSuccessListener(snapshots -> {
@@ -159,9 +133,6 @@ public class AdRepository {
                 .addOnFailureListener(e -> callback.onError(e.getMessage()));
     }
 
-    /**
-     * Одно объявление по ID.
-     */
     public void getAdById(String adId, AdCallback callback) {
         db.collection("ads").document(adId).get()
                 .addOnSuccessListener(doc -> {
@@ -177,9 +148,7 @@ public class AdRepository {
     }
 
 
-    /**
-     * Добавить новое объявление.
-     */
+
     public void createAd(Ad ad, AdCallback callback) {
         db.collection("ads")
                 .add(ad)

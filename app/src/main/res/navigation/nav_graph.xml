@@ -1,100 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Файл: app/src/main/res/navigation/nav_graph.xml -->
-<!-- Navigation Component — описывает все экраны и переходы между ними -->
 <navigation
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
     app:startDestination="@id/homeFragment">
 
-    <!-- Главный экран -->
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.jerkg.marketplace.ui.home.HomeFragment"
         android:label="Главная">
-
-        <!-- Переход: список → детали объявления -->
         <action
             android:id="@+id/action_home_to_detail"
             app:destination="@id/adDetailFragment" />
-
     </fragment>
 
-    <!-- Поиск -->
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.jerkg.marketplace.ui.search.SearchFragment"
         android:label="Поиск">
-
         <action
             android:id="@+id/action_search_to_detail"
             app:destination="@id/adDetailFragment" />
-
     </fragment>
 
-    <!-- Добавить объявление -->
     <fragment
         android:id="@+id/addAdFragment"
         android:name="com.jerkg.marketplace.ui.addad.AddAdFragment"
-        android:label="Добавить объявление" />
+        android:label="Добавить объявление">
+        <argument
+            android:name="adId"
+            app:argType="string"
+            android:defaultValue="@null"
+            app:nullable="true" />
+    </fragment>
 
-    <!-- Избранное -->
     <fragment
         android:id="@+id/favoritesFragment"
         android:name="com.jerkg.marketplace.ui.favorites.FavoritesFragment"
-        android:label="Избранное">
-
+        android:label="Мои избранные">
         <action
             android:id="@+id/action_favorites_to_detail"
             app:destination="@id/adDetailFragment" />
-
     </fragment>
 
-    <!-- Профиль -->
+    <fragment
+        android:id="@+id/chatsListFragment"
+        android:name="com.jerkg.marketplace.ui.chatslist.ChatsListFragment"
+        android:label="Чаты">
+        <action
+            android:id="@+id/action_chatsList_to_chat"
+            app:destination="@id/chatFragment" />
+    </fragment>
+
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.jerkg.marketplace.ui.profile.ProfileFragment"
         android:label="Профиль">
-
         <action
             android:id="@+id/action_profile_to_my_ads"
-            app:destination="@id/adDetailFragment" />
-
+            app:destination="@id/myAdsFragment" />
+        <action
+            android:id="@+id/action_profile_to_notifications"
+            app:destination="@id/notificationsFragment" />
+        <action
+            android:id="@+id/action_profile_to_favorites"
+            app:destination="@id/favoritesFragment" />
+        <action
+            android:id="@+id/action_profile_to_edit_profile"
+            app:destination="@id/editProfileFragment" />
     </fragment>
 
-    <!-- Детальный просмотр объявления (не в BottomNav) -->
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.jerkg.marketplace.ui.editprofile.EditProfileFragment"
+        android:label="Редактировать профиль" />
+
+    <fragment
+        android:id="@+id/myAdsFragment"
+        android:name="com.jerkg.marketplace.ui.myads.MyAdsFragment"
+        android:label="Мои объявления">
+        <action
+            android:id="@+id/action_myAds_to_detail"
+            app:destination="@id/adDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.jerkg.marketplace.ui.notifications.NotificationsFragment"
+        android:label="Уведомления" />
+
     <fragment
         android:id="@+id/adDetailFragment"
         android:name="com.jerkg.marketplace.ui.detail.AdDetailFragment"
         android:label="Объявление">
-
-        <!-- Аргумент: ID объявления -->
         <argument
             android:name="adId"
             app:argType="string" />
-
-        <!-- Переход в чат -->
         <action
             android:id="@+id/action_detail_to_chat"
             app:destination="@id/chatFragment" />
-
+        <action
+            android:id="@+id/action_detail_to_edit"
+            app:destination="@id/addAdFragment" />
     </fragment>
 
-    <!-- Чат -->
     <fragment
         android:id="@+id/chatFragment"
         android:name="com.jerkg.marketplace.ui.chat.ChatFragment"
         android:label="Чат">
-
         <argument
             android:name="chatId"
             app:argType="string" />
-
         <argument
             android:name="otherUserName"
             app:argType="string"
             android:defaultValue="Пользователь" />
-
     </fragment>
 
 </navigation>

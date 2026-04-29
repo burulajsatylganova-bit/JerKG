@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/background_primary">
+    android:background="#F7F9FC">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:background="#1A6EFF"
-        app:title="Мои избранные"
+        app:title="Уведомления"
         app:titleTextColor="#FFFFFF"
         app:navigationIcon="@drawable/ic_arrow_back"
         app:navigationIconTint="#FFFFFF" />
@@ -22,12 +22,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="40dp"
         android:visibility="gone"
-        android:layout_marginTop="32dp"
-        android:indeterminateTint="@color/brand_blue" />
+        android:indeterminateTint="#1A6EFF" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvFavorites"
+        android:id="@+id/rvNotifications"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -41,28 +41,27 @@
         android:orientation="vertical"
         android:gravity="center"
         android:padding="48dp"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="❤️"
-            android:textSize="56sp" />
+            android:text="🔔"
+            android:textSize="52sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Нет избранных объявлений"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            android:textColor="#0A1628"
+            android:text="Нет уведомлений"
+            android:textSize="16sp"
+            android:textColor="#4A5568"
             android:gravity="center"
             android:layout_marginTop="16dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Нажмите ♡ на объявлении чтобы добавить в избранное"
+            android:text="Здесь будут появляться уведомления об ответах на ваши объявления"
             android:textSize="13sp"
             android:textColor="#8A94A6"
             android:gravity="center"

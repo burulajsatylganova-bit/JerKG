@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    android:layout_marginBottom="1dp">
+
+    <!-- Иконка типа уведомления -->
+    <TextView
+        android:id="@+id/tvIcon"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:text="💬"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:background="#F0F4FF"
+        android:layout_marginEnd="12dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Новое сообщение"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#0A1628" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Покупатель написал вам"
+            android:textSize="12sp"
+            android:textColor="#4A5568"
+            android:layout_marginTop="2dp"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 мин назад"
+            android:textSize="11sp"
+            android:textColor="#8A94A6"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+    <!-- Точка "непрочитано" -->
+    <View
+        android:id="@+id/dotUnread"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:background="#1A6EFF"
+        android:layout_marginStart="8dp" />
+
+</LinearLayout>

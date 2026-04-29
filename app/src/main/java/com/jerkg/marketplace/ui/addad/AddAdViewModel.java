@@ -1,4 +1,3 @@
-// Файл: app/src/main/java/com/jerkg/marketplace/ui/addad/AddAdViewModel.java
 package com.jerkg.marketplace.ui.addad;
 
 import android.content.Context;
@@ -20,10 +19,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * AddAdViewModel — публикация объявления с фото через Base64.
- * Фото сжимается и сохраняется в Firestore как строка — Storage не нужен!
- */
+
 public class AddAdViewModel extends ViewModel {
 
     private final AdRepository adRepository = new AdRepository();
@@ -64,9 +60,7 @@ public class AddAdViewModel extends ViewModel {
         }).start();
     }
 
-    /**
-     * Конвертирует URI фото в Base64 строку со сжатием до 300x300.
-     */
+
     private String convertToBase64(Context context, Uri uri) {
         try {
             InputStream inputStream = context.getContentResolver().openInputStream(uri);

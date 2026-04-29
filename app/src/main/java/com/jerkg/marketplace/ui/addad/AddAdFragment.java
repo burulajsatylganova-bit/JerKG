@@ -1,4 +1,3 @@
-// Файл: app/src/main/java/com/jerkg/marketplace/ui/addad/AddAdFragment.java
 package com.jerkg.marketplace.ui.addad;
 
 import android.app.Activity;
@@ -28,15 +27,7 @@ import com.jerkg.marketplace.utils.CategoryHelper;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * AddAdFragment — форма добавления нового объявления.
- *
- * Шаги:
- * 1. Выбрать категорию + регион
- * 2. Ввести название, описание, цену
- * 3. Добавить фото (до 5 штук)
- * 4. Нажать "Опубликовать" → фото загружаются в Storage → данные в Firestore
- */
+
 public class AddAdFragment extends Fragment {
 
     private FragmentAddAdBinding binding;

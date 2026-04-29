@@ -1,4 +1,3 @@
-// Файл: app/src/main/java/com/jerkg/marketplace/ui/chat/ChatViewModel.java
 package com.jerkg.marketplace.ui.chat;
 
 import androidx.lifecycle.MutableLiveData;
@@ -11,11 +10,7 @@ import com.jerkg.marketplace.data.repository.ChatRepository;
 
 import java.util.List;
 
-/**
- * ChatViewModel — управляет сообщениями чата.
- * Подписывается на Firestore в реальном времени.
- * Снимает подписку при уничтожении ViewModel.
- */
+
 public class ChatViewModel extends ViewModel {
 
     private final ChatRepository chatRepo = new ChatRepository();

@@ -1,4 +1,3 @@
-// Файл: app/src/main/java/com/jerkg/marketplace/ui/detail/PhotoPagerAdapter.java
 package com.jerkg.marketplace.ui.detail;
 
 import android.view.LayoutInflater;

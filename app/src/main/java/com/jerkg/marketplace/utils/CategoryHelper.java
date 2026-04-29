@@ -1,4 +1,3 @@
-// Файл: app/src/main/java/com/jerkg/marketplace/utils/CategoryHelper.java
 package com.jerkg.marketplace.utils;
 
 import com.jerkg.marketplace.R;
@@ -7,10 +6,6 @@ import com.jerkg.marketplace.data.model.Category;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * CategoryHelper — список всех 8 категорий по ТЗ.
- * Иконки нужно создать в res/drawable (векторные).
- */
 public class CategoryHelper {
 
     public static List<Category> getAllCategories() {
@@ -26,7 +21,6 @@ public class CategoryHelper {
         );
     }
 
-    /** Список регионов Кыргызской Республики */
     public static List<String> getRegions() {
         return Arrays.asList(
                 "Все регионы",
@@ -41,13 +35,11 @@ public class CategoryHelper {
         );
     }
 
-    /** Название категории на текущем языке */
     public static String getCategoryName(Category category, String lang) {
         if ("ky".equals(lang)) return category.getNameKy();
         return category.getNameRu();
     }
 
-    /** Найти категорию по ID */
     public static Category getById(String id) {
         for (Category cat : getAllCategories()) {
             if (cat.getId().equals(id)) return cat;

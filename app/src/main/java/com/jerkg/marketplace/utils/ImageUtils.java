@@ -1,4 +1,3 @@
-// Файл: app/src/main/java/com/jerkg/marketplace/utils/ImageUtils.java
 package com.jerkg.marketplace.utils;
 
 import android.graphics.Bitmap;
@@ -8,16 +7,9 @@ import android.widget.ImageView;
 
 import com.jerkg.marketplace.R;
 
-/**
- * ImageUtils — загрузка Base64 изображений в ImageView.
- * Используется вместо Glide для Base64 строк.
- */
+
 public class ImageUtils {
 
-    /**
-     * Загружает фото в ImageView.
-     * Поддерживает Base64 строки (data:image/jpeg;base64,...)
-     */
     public static void loadImage(ImageView imageView, String imageData) {
         if (imageData == null || imageData.isEmpty()) {
             imageView.setImageResource(R.drawable.ic_image_placeholder);

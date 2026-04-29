@@ -1,4 +1,3 @@
-// Файл: app/src/main/java/com/jerkg/marketplace/ui/chat/ChatFragment.java
 package com.jerkg.marketplace.ui.chat;
 
 import android.os.Bundle;
@@ -15,15 +14,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.jerkg.marketplace.databinding.FragmentChatBinding;
 
-/**
- * ChatFragment — экран чата между двумя пользователями.
- *
- * Получает из аргументов навигации:
- * - chatId        — уникальный ID чата (uid1_uid2)
- * - otherUserName — имя/телефон собеседника для тулбара
- *
- * Сообщения обновляются в реальном времени через Firestore listener.
- */
 public class ChatFragment extends Fragment {
 
     private FragmentChatBinding binding;

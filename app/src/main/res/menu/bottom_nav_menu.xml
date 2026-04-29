@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Файл: app/src/main/res/menu/bottom_nav_menu.xml -->
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
@@ -19,9 +18,9 @@
         android:title="Добавить" />
 
     <item
-        android:id="@+id/favoritesFragment"
-        android:icon="@drawable/ic_favorite_outline"
-        android:title="Избранное" />
+        android:id="@+id/chatsListFragment"
+        android:icon="@drawable/ic_chat"
+        android:title="Чаты" />
 
     <item
         android:id="@+id/profileFragment"

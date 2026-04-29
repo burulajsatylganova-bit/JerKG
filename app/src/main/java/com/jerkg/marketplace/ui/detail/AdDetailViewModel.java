@@ -1,4 +1,4 @@
-// Файл: app/src/main/java/com/jerkg/marketplace/ui/detail/AdDetailViewModel.java
+
 package com.jerkg.marketplace.ui.detail;
 
 import androidx.lifecycle.MutableLiveData;

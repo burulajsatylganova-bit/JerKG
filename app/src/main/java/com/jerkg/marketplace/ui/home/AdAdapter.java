@@ -1,4 +1,3 @@
-// Файл: app/src/main/java/com/jerkg/marketplace/ui/home/AdAdapter.java
 package com.jerkg.marketplace.ui.home;
 
 import android.view.LayoutInflater;

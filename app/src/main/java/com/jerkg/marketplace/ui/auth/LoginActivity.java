@@ -1,4 +1,3 @@
-// Файл: app/src/main/java/com/jerkg/marketplace/ui/auth/LoginActivity.java
 package com.jerkg.marketplace.ui.auth;
 
 import android.content.Intent;
@@ -12,13 +11,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.jerkg.marketplace.databinding.ActivityLoginBinding;
 import com.jerkg.marketplace.ui.main.MainActivity;
 
-/**
- * LoginActivity — экран авторизации по номеру телефона.
- *
- * Логика (2 шага):
- * 1. Пользователь вводит номер → нажимает "Получить код" → приходит SMS
- * 2. Пользователь вводит 6-значный код → нажимает "Войти" → переход на главный экран
- */
+
 public class LoginActivity extends AppCompatActivity {
 
     private ActivityLoginBinding binding;

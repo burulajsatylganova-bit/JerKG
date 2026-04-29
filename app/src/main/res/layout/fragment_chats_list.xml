@@ -5,33 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/background_primary">
+    android:background="#F7F9FC">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:background="#1A6EFF"
-        app:title="Мои избранные"
-        app:titleTextColor="#FFFFFF"
-        app:navigationIcon="@drawable/ic_arrow_back"
-        app:navigationIconTint="#FFFFFF" />
+        app:title="Чаты"
+        app:titleTextColor="#FFFFFF" />
 
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="48dp"
         android:visibility="gone"
-        android:layout_marginTop="32dp"
-        android:indeterminateTint="@color/brand_blue" />
+        android:indeterminateTint="#1A6EFF" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvFavorites"
+        android:id="@+id/rvChats"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="8dp"
         android:clipToPadding="false" />
 
     <LinearLayout
@@ -46,23 +43,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="❤️"
+            android:text="💬"
             android:textSize="56sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Нет избранных объявлений"
+            android:text="Нет переписок"
             android:textSize="17sp"
             android:textStyle="bold"
             android:textColor="#0A1628"
-            android:gravity="center"
             android:layout_marginTop="16dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Нажмите ♡ на объявлении чтобы добавить в избранное"
+            android:text="Когда вы напишете продавцу или покупателю, переписка появится здесь"
             android:textSize="13sp"
             android:textColor="#8A94A6"
             android:gravity="center"

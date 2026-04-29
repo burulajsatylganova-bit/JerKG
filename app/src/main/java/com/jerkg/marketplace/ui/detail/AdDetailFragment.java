@@ -1,4 +1,3 @@
-// Файл: app/src/main/java/com/jerkg/marketplace/ui/detail/AdDetailFragment.java
 package com.jerkg.marketplace.ui.detail;
 
 import android.content.Intent;
@@ -15,23 +14,12 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
-import androidx.viewpager2.widget.ViewPager2;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.jerkg.marketplace.R;
 import com.jerkg.marketplace.data.repository.FavoritesRepository;
 import com.jerkg.marketplace.databinding.FragmentAdDetailBinding;
 
-/**
- * AdDetailFragment — полный просмотр объявления.
- *
- * Содержит:
- * - Слайдер фотографий (ViewPager2)
- * - Название, цена, регион, категория
- * - Описание
- * - Кнопки: Позвонить, Написать в чат, В избранное
- * - Для автора: Редактировать, Удалить
- */
 public class AdDetailFragment extends Fragment {
 
     private FragmentAdDetailBinding binding;
@@ -53,7 +41,6 @@ public class AdDetailFragment extends Fragment {
         viewModel = new ViewModelProvider(this).get(AdDetailViewModel.class);
         favoritesRepo = new FavoritesRepository();
 
-        // Получаем ID объявления из аргументов навигации
         String adId = getArguments() != null ? getArguments().getString("adId") : null;
         if (adId == null) {
             Toast.makeText(getContext(), "Ошибка: объявление не найдено", Toast.LENGTH_SHORT).show();
@@ -61,7 +48,6 @@ public class AdDetailFragment extends Fragment {
             return;
         }
 
-        // Загружаем объявление
         viewModel.loadAd(adId);
 
         setupToolbar();
@@ -74,30 +60,18 @@ public class AdDetailFragment extends Fragment {
     }
 
     private void observeViewModel() {
-        // Данные объявления
         viewModel.adLiveData.observe(getViewLifecycleOwner(), ad -> {
             if (ad == null) return;
 
-            // Заголовок тулбара
             binding.toolbar.setTitle(ad.getCategory());
-
-            // Название и цена
             binding.tvTitle.setText(ad.getTitle());
             binding.tvPrice.setText(ad.getFormattedPrice());
-
-            // Регион
             binding.tvRegion.setText(ad.getRegion());
-
-            // Описание
             binding.tvDescription.setText(ad.getDescription());
-
-            // Счётчик просмотров
             binding.tvViews.setText("Просмотры: " + ad.getViewCount());
 
-            // Фото — слайдер
             if (ad.getImageUrls() != null && !ad.getImageUrls().isEmpty()) {
-                PhotoPagerAdapter pagerAdapter =
-                        new PhotoPagerAdapter(ad.getImageUrls());
+                PhotoPagerAdapter pagerAdapter = new PhotoPagerAdapter(ad.getImageUrls());
                 binding.viewPagerPhotos.setAdapter(pagerAdapter);
                 binding.dotsIndicator.setViewPager2(binding.viewPagerPhotos);
                 binding.viewPagerPhotos.setVisibility(View.VISIBLE);
@@ -107,7 +81,6 @@ public class AdDetailFragment extends Fragment {
                 binding.ivNoPhoto.setVisibility(View.VISIBLE);
             }
 
-            // Кнопка "Позвонить"
             if (ad.getUserPhone() != null) {
                 binding.btnCall.setOnClickListener(v -> {
                     Intent callIntent = new Intent(Intent.ACTION_DIAL,
@@ -117,13 +90,11 @@ public class AdDetailFragment extends Fragment {
                 binding.btnCall.setVisibility(View.VISIBLE);
             }
 
-            // Кнопка "Написать" (чат)
             binding.btnChat.setOnClickListener(v -> {
                 String currentUid = FirebaseAuth.getInstance().getCurrentUser() != null
                         ? FirebaseAuth.getInstance().getCurrentUser().getUid() : null;
                 if (currentUid == null) return;
 
-                // chatId = комбинация двух UID (отсортированных)
                 String chatId = currentUid.compareTo(ad.getUserId()) < 0
                         ? currentUid + "_" + ad.getUserId()
                         : ad.getUserId() + "_" + currentUid;
@@ -136,7 +107,6 @@ public class AdDetailFragment extends Fragment {
                         .navigate(R.id.action_detail_to_chat, args);
             });
 
-            // Показываем кнопки редактирования только автору
             String currentUid = FirebaseAuth.getInstance().getCurrentUser() != null
                     ? FirebaseAuth.getInstance().getCurrentUser().getUid() : null;
             boolean isOwner = ad.getUserId() != null && ad.getUserId().equals(currentUid);
@@ -145,40 +115,40 @@ public class AdDetailFragment extends Fragment {
             binding.layoutGuestActions.setVisibility(isOwner ? View.GONE : View.VISIBLE);
 
             if (isOwner) {
+                // ✅ ИСПРАВЛЕНО: переход на экран редактирования с передачей adId
                 binding.btnEdit.setOnClickListener(v -> {
-                    // TODO: переход на экран редактирования с заполненными полями
-                    Toast.makeText(getContext(), "Редактирование", Toast.LENGTH_SHORT).show();
+                    Bundle args = new Bundle();
+                    args.putString("adId", ad.getId());
+                    Navigation.findNavController(requireView())
+                            .navigate(R.id.action_detail_to_edit, args);
                 });
+
+                // ✅ ИСПРАВЛЕНО: подтверждение и удаление
                 binding.btnDelete.setOnClickListener(v -> confirmDelete(ad.getId()));
             }
 
-            // Проверяем избранное
             favoritesRepo.isFavorite(ad.getId(), fav -> {
                 isFavorite = fav;
                 updateFavoriteButton();
             });
 
-            // Кнопка избранного
             binding.btnFavorite.setOnClickListener(v -> toggleFavorite(ad.getId()));
         });
 
-        // Загрузка
         viewModel.loadingLiveData.observe(getViewLifecycleOwner(), loading -> {
             binding.progressBar.setVisibility(loading ? View.VISIBLE : View.GONE);
             binding.scrollContent.setVisibility(loading ? View.GONE : View.VISIBLE);
         });
 
-        // Ошибки
         viewModel.errorLiveData.observe(getViewLifecycleOwner(), error -> {
             if (error != null)
                 Toast.makeText(getContext(), error, Toast.LENGTH_SHORT).show();
         });
 
-        // Удаление
         viewModel.deletedLiveData.observe(getViewLifecycleOwner(), deleted -> {
             if (Boolean.TRUE.equals(deleted)) {
                 Toast.makeText(getContext(), "Объявление удалено", Toast.LENGTH_SHORT).show();
-                requireActivity().onBackPressed();
+                Navigation.findNavController(requireView()).popBackStack();
             }
         });
     }

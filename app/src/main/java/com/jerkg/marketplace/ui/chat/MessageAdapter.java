@@ -1,4 +1,3 @@
-// Файл: app/src/main/java/com/jerkg/marketplace/ui/chat/MessageAdapter.java
 package com.jerkg.marketplace.ui.chat;
 
 import android.view.LayoutInflater;
@@ -18,13 +17,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-/**
- * MessageAdapter — адаптер для списка сообщений чата.
- *
- * Два типа view:
- * - VIEW_TYPE_SENT   (1) — сообщения текущего пользователя (справа, синие)
- * - VIEW_TYPE_RECEIVED (0) — сообщения собеседника (слева, серые)
- */
+
 public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageViewHolder> {
 
     private static final int VIEW_TYPE_RECEIVED = 0;

@@ -1,4 +1,3 @@
-// Файл: app/src/main/java/com/jerkg/marketplace/ui/favorites/FavoritesFragment.java
 package com.jerkg.marketplace.ui.favorites;
 
 import android.os.Bundle;

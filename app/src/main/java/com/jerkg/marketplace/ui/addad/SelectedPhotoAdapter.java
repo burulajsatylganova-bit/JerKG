@@ -1,4 +1,3 @@
-// Файл: app/src/main/java/com/jerkg/marketplace/ui/addad/SelectedPhotoAdapter.java
 package com.jerkg.marketplace.ui.addad;
 
 import android.net.Uri;
@@ -15,10 +14,7 @@ import com.jerkg.marketplace.R;
 
 import java.util.List;
 
-/**
- * SelectedPhotoAdapter — список выбранных фото для формы добавления.
- * Показывает превью + кнопку удаления (X) на каждом фото.
- */
+
 public class SelectedPhotoAdapter extends RecyclerView.Adapter<SelectedPhotoAdapter.PhotoVH> {
 
     private final List<Uri> uris;

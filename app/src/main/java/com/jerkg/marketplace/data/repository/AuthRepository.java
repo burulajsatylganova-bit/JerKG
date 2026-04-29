@@ -146,15 +146,16 @@ public class AuthRepository {
      * Используем merge — чтобы не перезаписать существующие данные (имя, фото).
      */
     private void saveUserToFirestore(FirebaseUser firebaseUser) {
-        User user = new User(firebaseUser.getUid(), firebaseUser.getPhoneNumber());
+        // Используем merge — не перезаписываем name/region которые пользователь уже сохранил
+        java.util.Map<String, Object> data = new java.util.HashMap<>();
+        data.put("uid", firebaseUser.getUid());
+        data.put("phoneNumber", firebaseUser.getPhoneNumber());
+        data.put("lastLoginAt", System.currentTimeMillis());
 
         db.collection("users")
                 .document(firebaseUser.getUid())
-                .set(user) // set с merge чтобы не затирать имя/фото
-                .addOnFailureListener(e -> {
-                    // Логируем, но не крашим — авторизация всё равно прошла
-                    e.printStackTrace();
-                });
+                .set(data, com.google.firebase.firestore.SetOptions.merge())
+                .addOnFailureListener(Throwable::printStackTrace);
     }
 
     /**

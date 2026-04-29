@@ -1,4 +1,3 @@
-// Файл: app/src/main/java/com/jerkg/marketplace/ui/auth/LoginViewModel.java
 package com.jerkg.marketplace.ui.auth;
 
 import android.app.Activity;
@@ -9,12 +8,7 @@ import androidx.lifecycle.ViewModel;
 import com.google.firebase.auth.FirebaseUser;
 import com.jerkg.marketplace.data.repository.AuthRepository;
 
-/**
- * LoginViewModel — прослойка между UI (LoginActivity) и данными (AuthRepository).
- * Activity наблюдает за LiveData, ViewModel вызывает Repository.
- *
- * MVVM: View -> ViewModel -> Repository -> Firebase
- */
+
 public class LoginViewModel extends ViewModel {
 
     private final AuthRepository repository;
