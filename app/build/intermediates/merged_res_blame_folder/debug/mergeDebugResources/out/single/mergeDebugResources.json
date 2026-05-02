@@ -1,0 +1,306 @@
+[
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_fragment_chats_list.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_chats_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_bg_category.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\bg_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_favorite_outline.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_favorite_outline.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_cat_cars.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_cat_cars.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\color_bottom_nav_color.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\color\\bottom_nav_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_favorite_filled.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_favorite_filled.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_cat_services.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_cat_services.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_empty.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_empty.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_cat_work.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_cat_work.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_bg_card_white.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\bg_card_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_fragment_settings.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_item_category.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\item_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_fragment_add_ad.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_add_ad.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_profile.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_fragment_favorites.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_favorites.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_image_placeholder.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_image_placeholder.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_cat_realty.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_cat_realty.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_logo.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_arrow_right.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_arrow_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_item_ad.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\item_ad.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_arrow_back.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_arrow_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_nav_home.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_nav_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_item_notification.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\item_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_cat_clothes.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_cat_clothes.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_fragment_ad_detail.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_ad_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_bg_bubble_sent.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\bg_bubble_sent.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_send.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_send.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_cat_all.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_cat_all.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_bg_logo.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\bg_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_cat_companion.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_cat_companion.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_bg_bubble_received.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\bg_bubble_received.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_item_chat.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\item_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_item_message_received.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\item_message_received.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_location.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_item_photo.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\item_photo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_bg_spinner.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\bg_spinner.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_item_message_sent.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\item_message_sent.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_bg_circle_red.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\bg_circle_red.xml"
+    },
+    {
+        "merged": "com.aimak.marketplace.app-debug-72:/layout_fragment_settings.xml.flat",
+        "source": "com.aimak.marketplace.app-main-74:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_bg_splash.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\bg_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_cat_animals.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_cat_animals.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_fragment_chat.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_fragment_edit_profile.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_edit_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_close.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_close.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_cat_electronics.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_cat_electronics.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_phone.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_phone.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_edit.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_fragment_support.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_support.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_bg_circle_white.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\bg_circle_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_fragment_my_ads.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_my_ads.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_add.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_item_selected_photo.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\item_selected_photo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\drawable_ic_chat.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\drawable\\ic_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_fragment_search.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-debug-72:\\layout_fragment_notifications.xml.flat",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_notifications.xml"
+    }
+]

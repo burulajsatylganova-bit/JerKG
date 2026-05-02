@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.jerkg.marketplace" />
-                  <option name="mobileSdkAppId" value="1:131843673839:android:f40a8f09a2160717e5151a" />
-                  <option name="projectId" value="jerkg-681fc" />
-                  <option name="projectNumber" value="131843673839" />
+                  <option name="appId" value="PLACEHOLDER" />
+                  <option name="mobileSdkAppId" value="" />
+                  <option name="projectId" value="" />
+                  <option name="projectNumber" value="" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Файл: app/src/main/res/values/strings.xml (русский — по умолчанию) -->
 <resources>
-    <string name="app_name">ЖЕР КГ</string>
+    <string name="app_name">Аймак</string>
     <string name="tagline">Маркетплейс Кыргызстана</string>
 
     <!-- Авторизация -->
     <string name="auth_enter_phone">Введите номер телефона</string>
     <string name="auth_phone_hint">Мы отправим вам SMS с кодом подтверждения</string>
+    <string name="auth_phone_placeholder">+996 700 123 456</string>
     <string name="auth_get_code">Получить код</string>
     <string name="auth_enter_code">Введите код из SMS</string>
+    <string name="auth_code_sent_to">Код отправлен на +996...</string>
     <string name="auth_login">Войти</string>
     <string name="auth_change_phone">Изменить номер телефона</string>
     <string name="auth_sms_sent">SMS отправлена</string>
@@ -17,7 +18,8 @@
     <string name="home_search_hint">Поиск объявлений...</string>
     <string name="home_categories">Категории</string>
     <string name="home_all_ads">Все объявления</string>
-    <string name="add_ad">+ Добавить</string>
+    <string name="home_city_default">Бишкек</string>
+    <string name="home_empty">Объявлений не найдено</string>
 
     <!-- Категории -->
     <string name="cat_realty">Недвижимость</string>
@@ -28,8 +30,10 @@
     <string name="cat_electronics">Электроника</string>
     <string name="cat_companion">Попутчик</string>
     <string name="cat_services">Услуги</string>
+    <string name="cat_all">Все категории</string>
 
     <!-- Регионы -->
+    <string name="region_all">Все регионы</string>
     <string name="region_bishkek">Бишкек</string>
     <string name="region_osh">Ош</string>
     <string name="region_chui">Чуйская область</string>
@@ -39,25 +43,193 @@
     <string name="region_jalal">Джалал-Абадская область</string>
     <string name="region_batken">Баткенская область</string>
 
-    <!-- Объявление -->
+    <!-- Объявление (детали) -->
     <string name="ad_price">Цена</string>
     <string name="ad_location">Местоположение</string>
     <string name="ad_call">Позвонить</string>
-    <string name="ad_chat">Написать</string>
+    <string name="ad_chat">Написать продавцу</string>
     <string name="ad_favorite">В избранное</string>
+    <string name="ad_in_favorite">В избранном</string>
     <string name="ad_edit">Редактировать</string>
     <string name="ad_delete">Удалить</string>
-    <string name="ad_publish">Опубликовать</string>
+    <string name="ad_views">Просмотры: </string>
+    <string name="ad_negotiable">Договорная</string>
+    <string name="ad_confirm_delete_title">Удалить объявление?</string>
+    <string name="ad_confirm_delete_msg">Объявление будет удалено. Это действие нельзя отменить.</string>
+    <string name="ad_deleted">Объявление удалено</string>
+
+    <!-- Добавить объявление -->
+    <string name="add_ad_title">Добавить объявление</string>
+    <string name="add_ad_edit_title">Редактировать</string>
+    <string name="add_ad_category">Категория *</string>
+    <string name="add_ad_category_hint">Выберите категорию</string>
+    <string name="add_ad_region">Регион *</string>
+    <string name="add_ad_title_hint">Название объявления *</string>
+    <string name="add_ad_description_hint">Описание *</string>
+    <string name="add_ad_price_hint">Цена (сом)</string>
+    <string name="add_ad_negotiable">Договорная</string>
+    <string name="add_ad_photos">Фотографии (до 5)</string>
+    <string name="add_ad_add_photo">+ Добавить фото</string>
+    <string name="add_ad_publish">Опубликовать</string>
+    <string name="add_ad_save">Сохранить</string>
+    <string name="add_ad_published">Объявление опубликовано ✅</string>
+    <string name="add_ad_updated">Объявление обновлено ✅</string>
+    <string name="add_ad_max_photos">Максимум 5 фотографий</string>
+    <string name="add_ad_select_category">Выберите категорию</string>
+    <string name="add_ad_select_region">Выберите регион</string>
+    <string name="add_ad_error_title">Введите название</string>
+    <string name="add_ad_error_desc">Введите описание</string>
+    <string name="add_ad_error_price">Введите цену</string>
+
+    <!-- Поиск -->
+    <string name="search_title">Поиск</string>
+    <string name="search_hint">Поиск объявлений...</string>
+    <string name="search_category">Категория</string>
+    <string name="search_region">Регион</string>
+    <string name="search_loading">Загрузка...</string>
+    <string name="search_empty">Ничего не найдено</string>
+    <string name="search_empty_hint">Попробуйте изменить запрос или фильтры</string>
+
+    <!-- Чат -->
+    <string name="chat_empty">Начните диалог. Напишите первое сообщение!</string>
+    <string name="chat_hint">Сообщение...</string>
+    <string name="chat_seller">Продавец</string>
+    <string name="chats_title">Чаты</string>
+    <string name="chats_empty_title">Нет переписок</string>
+    <string name="chats_empty_desc">Когда вы напишете продавцу или покупателю, переписка появится здесь</string>
+
+    <!-- Профиль -->
+    <string name="profile_user_default">Пользователь</string>
+    <string name="profile_phone_default">+996 — — —</string>
+    <string name="profile_my_ads">Мои объявления</string>
+    <string name="profile_active_ads"> активных</string>
+    <string name="profile_notifications">Уведомления</string>
+    <string name="profile_no_notif">нет новых</string>
+    <string name="profile_new_notif"> новых</string>
+    <string name="profile_favorites">Мои избранные</string>
+    <string name="profile_language">Язык</string>
+    <string name="profile_dark_theme">Тёмная тема</string>
+    <string name="profile_settings">Настройки</string>
+    <string name="profile_support">Поддержка</string>
+    <string name="profile_logout">Выйти из аккаунта</string>
+    <string name="profile_settings_soon">Настройки — скоро</string>
+    <string name="profile_support_soon">Поддержка — скоро</string>
+    <string name="profile_lang_dialog_title">Выберите язык</string>
+    <string name="profile_logout_title">Выйти из аккаунта?</string>
+    <string name="profile_logout_msg">Вы уверены, что хотите выйти?</string>
+    <string name="profile_logout_confirm">Выйти</string>
+    <string name="profile_lang_ru">Русский</string>
+    <string name="profile_lang_ky">Кыргызча</string>
+
+    <!-- Мои объявления -->
+    <string name="my_ads_title">Мои объявления</string>
+    <string name="my_ads_count_prefix">Всего объявлений: </string>
+    <string name="my_ads_empty_title">У вас пока нет объявлений</string>
+    <string name="my_ads_empty_hint">Нажмите + чтобы добавить</string>
+    <string name="my_ads_add_btn">Добавить объявление</string>
+
+    <!-- Избранное -->
+    <string name="favorites_title">Мои избранные</string>
+    <string name="favorites_empty_title">Нет избранных объявлений</string>
+    <string name="favorites_empty_hint">Нажмите ♡ на объявлении чтобы добавить в избранное</string>
+    <string name="favorites_removed">Удалено из избранного</string>
+    <string name="favorites_added">Добавлено в избранное ❤️</string>
+
+    <!-- Уведомления -->
+    <string name="notif_title">Уведомления</string>
+    <string name="notif_empty_title">Нет уведомлений</string>
+    <string name="notif_empty_hint">Здесь будут появляться уведомления об ответах на ваши объявления</string>
+
+    <!-- Редактирование профиля -->
+    <string name="edit_profile_title">Редактировать профиль</string>
+    <string name="edit_profile_name_label">Имя</string>
+    <string name="edit_profile_name_hint">Введите ваше имя</string>
+    <string name="edit_profile_region_label">Регион</string>
+    <string name="edit_profile_save">Сохранить</string>
+    <string name="edit_profile_saving">Сохранение...</string>
+    <string name="edit_profile_saved">Профиль обновлён ✅</string>
+    <string name="edit_profile_created">Профиль создан ✅</string>
+    <string name="edit_profile_name_error">Введите имя</string>
+    <string name="edit_profile_photo_soon">Загрузка фото — скоро</string>
+
+    <!-- Сплэш -->
+    <string name="splash_tagline">МАРКЕТПЛЕЙС КЫРГЫЗСТАНА</string>
+    <string name="splash_choose_lang">Выберите язык / Тилди тандаңыз</string>
+    <string name="splash_btn_ru">🇷🇺  Русский</string>
+    <string name="splash_btn_ky">🇰🇬  Кыргызча</string>
 
     <!-- Навигация -->
     <string name="nav_home">Главная</string>
     <string name="nav_search">Поиск</string>
     <string name="nav_add">Добавить</string>
-    <string name="nav_favorites">Избранное</string>
+    <string name="nav_chats">Чаты</string>
     <string name="nav_profile">Профиль</string>
 
-    <!-- Ошибки -->
+    <!-- Общие -->
+    <string name="btn_cancel">Отмена</string>
+    <string name="btn_delete">Удалить</string>
+    <string name="loading">Загрузка...</string>
+    <string name="error_not_authorized">Необходима авторизация</string>
     <string name="error_network">Нет подключения к интернету</string>
     <string name="error_invalid_code">Неверный код. Попробуйте снова.</string>
     <string name="error_fill_all_fields">Заполните все поля</string>
+    <string name="error_ad_not_found">Ошибка: объявление не найдено</string>
+    <string name="error_permission_denied">Ошибка доступа. Проверьте правила Firestore.</string>
+
+    <!-- Дополнительные строки -->
+    <string name="price_negotiable_short">Договорная</string>
+    <string name="currency_som"> сом</string>
+    <string name="time_just_now">только что</string>
+    <string name="time_min_ago"> мин</string>
+    <string name="time_hour_ago"> ч</string>
+    <string name="time_day_ago"> дн</string>
+    <string name="time_yesterday">вчера</string>
+    <string name="found_count">Найдено: </string>
+    <string name="all_label">Все</string>
+    <string name="choose_region">Выберите регион</string>
+    <string name="error_enter_phone">Введите номер телефона</string>
+    <string name="error_enter_code">Введите 6-значный код</string>
+    <string name="error_wrong_code">Неверный код. Попробуйте снова.</string>
+    <string name="error_request_code_first">Сначала запросите код</string>
+    <string name="error_not_authorized_short">Не авторизован</string>
+    <string name="error_ad_not_found_short">Объявление не найдено</string>
+    <string name="error_invalid_price">Неверная цена</string>
+    <string name="code_sent_to">Код отправлен на </string>
+    <string name="total_ads">Всего объявлений: </string>
+    <string name="publishing">Публикация...</string>
+    <string name="saving">Сохранение...</string>
+
+    <!-- Настройки -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_section_notifications">УВЕДОМЛЕНИЯ</string>
+    <string name="settings_section_privacy">КОНФИДЕНЦИАЛЬНОСТЬ</string>
+    <string name="settings_section_about">О ПРИЛОЖЕНИИ</string>
+    <string name="settings_notif_messages">Уведомления о сообщениях</string>
+    <string name="settings_notif_new_ads">Новые объявления в моём регионе</string>
+    <string name="settings_show_phone">Показывать номер телефона</string>
+    <string name="settings_show_phone_hint">Покупатели смогут видеть ваш номер</string>
+    <string name="settings_show_online">Показывать статус онлайн</string>
+    <string name="settings_version">Версия приложения</string>
+    <string name="settings_clear_cache">Очистить кэш</string>
+    <string name="settings_clear_cache_msg">Очистить временные файлы приложения?</string>
+    <string name="settings_cache_cleared">Кэш очищен ✅</string>
+
+    <!-- Поддержка -->
+    <string name="support_title">Поддержка</string>
+    <string name="support_faq_title">Частые вопросы</string>
+    <string name="support_faq1_q">Как найти нужный товар?</string>
+    <string name="support_faq1_a">Используйте строку поиска вверху главного экрана. Введите название товара или ключевое слово. Также можно фильтровать по категории и региону, нажав на соответствующие кнопки.</string>
+    <string name="support_faq2_q">Как добавить объявление?</string>
+    <string name="support_faq2_a">Нажмите кнопку «+» в нижнем меню. Заполните название, описание, укажите цену и регион, выберите категорию. Можно добавить до 5 фотографий. Нажмите «Опубликовать».</string>
+    <string name="support_faq3_q">Как добавить в избранное?</string>
+    <string name="support_faq3_a">Нажмите значок сердечка ♡ на карточке объявления или на странице деталей. Все сохранённые объявления доступны в разделе «Профиль → Мои избранные».</string>
+    <string name="support_faq4_q">Как написать продавцу?</string>
+    <string name="support_faq4_a">Откройте объявление и нажмите кнопку «Написать продавцу». Откроется чат. Все ваши переписки хранятся в разделе «Чаты» нижнего меню.</string>
+    <string name="support_faq5_q">Как удалить или редактировать объявление?</string>
+    <string name="support_faq5_a">Откройте своё объявление. Внизу страницы появятся кнопки «Редактировать» и «Удалить» — они видны только владельцу объявления. Все свои объявления можно найти в «Профиль → Мои объявления».</string>
+    <string name="support_contact_title">Связаться с нами</string>
+    <string name="support_contact_desc">Не нашли ответ? Напишите нам — мы поможем в течение 24 часов.</string>
+    <string name="support_btn_email">✉️  Написать на email</string>
+    <string name="support_btn_whatsapp">💬  WhatsApp</string>
+
 </resources>

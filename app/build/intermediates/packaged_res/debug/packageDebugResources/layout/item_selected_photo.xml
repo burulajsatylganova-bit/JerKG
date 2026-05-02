@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Файл: app/src/main/res/layout/item_selected_photo.xml -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:layout_marginEnd="8dp">
+
+    <ImageView
+        android:id="@+id/ivSelectedPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_category" />
+
+    <!-- Кнопка удаления -->
+    <ImageView
+        android:id="@+id/ivRemovePhoto"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="4dp"
+        android:src="@drawable/ic_close"
+        android:background="@drawable/bg_circle_red"
+        android:padding="3dp"
+        android:elevation="4dp" />
+
+</FrameLayout>

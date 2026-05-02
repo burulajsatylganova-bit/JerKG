@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\item_chat.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\item_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\fragment_edit_profile.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_edit_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\fragment_ad_detail.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_ad_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\fragment_notifications.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_notifications.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\item_notification.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\item_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\item_ad.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\item_ad.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.aimak.marketplace.app-mergeDebugResources-71:/layout/fragment_settings.xml",
+        "source": "com.aimak.marketplace.app-main-74:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\item_category.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\item_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\item_selected_photo.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\item_selected_photo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\fragment_add_ad.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_add_ad.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\fragment_support.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_support.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\fragment_favorites.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_favorites.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\item_message_received.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\item_message_received.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\fragment_chat.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\item_photo.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\item_photo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\fragment_search.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\fragment_my_ads.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_my_ads.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\fragment_chats_list.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_chats_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\item_message_sent.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\item_message_sent.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\fragment_settings.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-mergeDebugResources-71:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\Sultan\\.gradle\\daemon\\8.13\\com.aimak.marketplace.app-main-74:\\layout\\fragment_home.xml"
+    }
+]

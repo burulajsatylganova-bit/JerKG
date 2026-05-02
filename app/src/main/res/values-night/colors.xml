@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Бренд — синий остаётся, но чуть светлее для видимости на тёмном -->
+    <color name="brand_blue">#4D8EFF</color>
+    <color name="brand_blue_dark">#1A6EFF</color>
+    <color name="brand_emerald">#00E5AA</color>
+    <color name="brand_dark">#E8EDF5</color>
+    <color name="brand_mid">#B0BCCF</color>
+
+    <!-- Фон — тёмный -->
+    <color name="background_primary">#0D1117</color>
+    <color name="background_card">#161B22</color>
+
+    <!-- Текст — светлый -->
+    <color name="text_primary">#E8EDF5</color>
+    <color name="text_secondary">#8B949E</color>
+    <color name="text_tertiary">#6E7681</color>
+
+    <!-- Другие -->
+    <color name="border_color">#21262D</color>
+    <color name="badge_blue_bg">#1A2D4A</color>
+    <color name="badge_green_bg">#0D2B20</color>
+    <color name="error_red">#FF453A</color>
+    <color name="success_green">#00E5AA</color>
+</resources>

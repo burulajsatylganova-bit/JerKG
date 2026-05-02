@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Файл: app/src/main/res/drawable/ic_logo.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="44dp"
+    android:height="44dp"
+    android:viewportWidth="44"
+    android:viewportHeight="44">
+    <!-- Капля/метка местоположения -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M22,4C13.16,4 6,11.16 6,20C6,26.48 9.84,32.04 15.4,34.68L22,40L28.6,34.68C34.16,32.04 38,26.48 38,20C38,11.16 30.84,4 22,4Z"
+        android:fillAlpha="0.9"/>
+    <path
+        android:fillColor="#1A6EFF"
+        android:pathData="M22,13C17.58,13 14,16.58 14,21C14,25.42 17.58,29 22,29C26.42,29 30,25.42 30,21C30,16.58 26.42,13 22,13Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M22,18C20.34,18 19,19.34 19,21C19,22.66 20.34,24 22,24C23.66,24 25,22.66 25,21C25,19.34 23.66,18 22,18Z"/>
+</vector>

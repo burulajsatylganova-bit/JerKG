@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.jerkg.marketplace'
+    namespace 'com.aimak.marketplace'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.jerkg.marketplace"
+        applicationId "com.aimak.marketplace"
         minSdk 24
         targetSdk 34
         versionCode 1

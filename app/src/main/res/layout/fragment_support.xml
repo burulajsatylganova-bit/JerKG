@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_primary">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/brand_blue"
+        app:title="@string/support_title"
+        app:titleTextColor="#FFFFFF"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:navigationIconTint="#FFFFFF" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- FAQ заголовок -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support_faq_title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="12dp" />
+
+            <!-- FAQ карточки -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardFaq1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/background_card">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🔍" android:textSize="18sp" android:layout_marginEnd="8dp" />
+                        <TextView
+                            android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/support_faq1_q"
+                            android:textSize="15sp" android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+                        <TextView android:id="@+id/tvFaq1Arrow"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="▼" android:textSize="12sp" android:textColor="@color/text_tertiary" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvFaq1Answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/support_faq1_a"
+                        android:textSize="13sp"
+                        android:textColor="@color/text_secondary"
+                        android:layout_marginTop="8dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardFaq2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/background_card">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="📝" android:textSize="18sp" android:layout_marginEnd="8dp" />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/support_faq2_q"
+                            android:textSize="15sp" android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+                        <TextView android:id="@+id/tvFaq2Arrow" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="▼" android:textSize="12sp" android:textColor="@color/text_tertiary" />
+                    </LinearLayout>
+                    <TextView android:id="@+id/tvFaq2Answer" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:text="@string/support_faq2_a"
+                        android:textSize="13sp" android:textColor="@color/text_secondary"
+                        android:layout_marginTop="8dp" android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardFaq3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/background_card">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="❤️" android:textSize="18sp" android:layout_marginEnd="8dp" />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/support_faq3_q"
+                            android:textSize="15sp" android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+                        <TextView android:id="@+id/tvFaq3Arrow" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="▼" android:textSize="12sp" android:textColor="@color/text_tertiary" />
+                    </LinearLayout>
+                    <TextView android:id="@+id/tvFaq3Answer" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:text="@string/support_faq3_a"
+                        android:textSize="13sp" android:textColor="@color/text_secondary"
+                        android:layout_marginTop="8dp" android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardFaq4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/background_card">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="💬" android:textSize="18sp" android:layout_marginEnd="8dp" />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/support_faq4_q"
+                            android:textSize="15sp" android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+                        <TextView android:id="@+id/tvFaq4Arrow" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="▼" android:textSize="12sp" android:textColor="@color/text_tertiary" />
+                    </LinearLayout>
+                    <TextView android:id="@+id/tvFaq4Answer" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:text="@string/support_faq4_a"
+                        android:textSize="13sp" android:textColor="@color/text_secondary"
+                        android:layout_marginTop="8dp" android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardFaq5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/background_card">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🗑️" android:textSize="18sp" android:layout_marginEnd="8dp" />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/support_faq5_q"
+                            android:textSize="15sp" android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+                        <TextView android:id="@+id/tvFaq5Arrow" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="▼" android:textSize="12sp" android:textColor="@color/text_tertiary" />
+                    </LinearLayout>
+                    <TextView android:id="@+id/tvFaq5Answer" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:text="@string/support_faq5_a"
+                        android:textSize="13sp" android:textColor="@color/text_secondary"
+                        android:layout_marginTop="8dp" android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Контакты -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support_contact_title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="12dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/background_card">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/support_contact_desc"
+                        android:textSize="13sp" android:textColor="@color/text_secondary"
+                        android:layout_marginBottom="12dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnEmailSupport"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="@string/support_btn_email"
+                        app:backgroundTint="@color/brand_blue"
+                        app:cornerRadius="10dp"
+                        android:layout_marginBottom="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnWhatsapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="@string/support_btn_whatsapp"
+                        app:backgroundTint="#25D366"
+                        app:cornerRadius="10dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

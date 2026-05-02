@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Файл: app/src/main/res/color/bottom_nav_color.xml -->
+<!-- Цвет иконок нижней навигации: активная — синяя, неактивная — серая -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/brand_blue" android:state_checked="true" />
+    <item android:color="@color/text_tertiary" />
+</selector>
