@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Файл: app/src/main/res/layout/item_message_sent.xml -->
-<!-- Пузырь исходящего сообщения (справа, синий) -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -25,20 +23,47 @@
             android:id="@+id/tvMessageText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Текст сообщения"
             android:textSize="14sp"
             android:textColor="#FFFFFF"
             android:lineSpacingMultiplier="1.3" />
 
-        <TextView
-            android:id="@+id/tvMessageTime"
+        <!-- Время + статус прочтения -->
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="12:00"
-            android:textSize="10sp"
-            android:textColor="#CCFFFFFF"
+            android:orientation="horizontal"
             android:layout_gravity="end"
-            android:layout_marginTop="2dp" />
+            android:gravity="center_vertical"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/tvMessageTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="#CCFFFFFF" />
+
+            <!-- ✅ Статус: отправлено / прочитано -->
+            <TextView
+                android:id="@+id/tvReadStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✓"
+                android:textSize="11sp"
+                android:textColor="#CCFFFFFF"
+                android:layout_marginStart="4dp" />
+
+        </LinearLayout>
+
+        <!-- Время прочтения (показывается только если прочитано) -->
+        <TextView
+            android:id="@+id/tvReadAt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:textColor="#AAFFFFFF"
+            android:layout_gravity="end"
+            android:visibility="gone" />
 
     </LinearLayout>
 

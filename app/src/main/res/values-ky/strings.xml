@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Аймак</string>
     <string name="tagline">Кыргызстандын маркетплейси</string>
-
-    <!-- Авторизация -->
+    <!--  Авторизация  -->
     <string name="auth_enter_phone">Телефон номериңизди киргизиңиз</string>
     <string name="auth_phone_hint">Биз сизге SMS аркылуу тастыктоо кодун жөнөтөбүз</string>
     <string name="auth_phone_placeholder">+996 700 123 456</string>
@@ -13,15 +11,13 @@
     <string name="auth_login">Кирүү</string>
     <string name="auth_change_phone">Телефон номерин өзгөртүү</string>
     <string name="auth_sms_sent">SMS жөнөтүлдү</string>
-
-    <!-- Главный экран -->
+    <!--  Главный экран  -->
     <string name="home_search_hint">Жарнамаларды издөө...</string>
     <string name="home_categories">Категориялар</string>
     <string name="home_all_ads">Бардык жарнамалар</string>
     <string name="home_city_default">Бишкек</string>
     <string name="home_empty">Жарнамалар табылган жок</string>
-
-    <!-- Категории -->
+    <!--  Категории  -->
     <string name="cat_realty">Кыймылсыз мүлк</string>
     <string name="cat_work">Жумуш</string>
     <string name="cat_clothes">Кийим-кечек</string>
@@ -31,8 +27,7 @@
     <string name="cat_companion">Каттамдаш</string>
     <string name="cat_services">Кызматтар</string>
     <string name="cat_all">Бардык категориялар</string>
-
-    <!-- Регионы -->
+    <!--  Регионы  -->
     <string name="region_all">Бардык аймактар</string>
     <string name="region_bishkek">Бишкек</string>
     <string name="region_osh">Ош</string>
@@ -42,8 +37,7 @@
     <string name="region_talas">Талас облусу</string>
     <string name="region_jalal">Жалал-Абад облусу</string>
     <string name="region_batken">Баткен облусу</string>
-
-    <!-- Объявление (детали) -->
+    <!--  Объявление (детали)  -->
     <string name="ad_price">Баасы</string>
     <string name="ad_location">Жери</string>
     <string name="ad_call">Чалуу</string>
@@ -57,8 +51,7 @@
     <string name="ad_confirm_delete_title">Жарнаманы жок кылуу?</string>
     <string name="ad_confirm_delete_msg">Жарнама жок кылынат. Бул аракетти артка кайтаруу мүмкүн эмес.</string>
     <string name="ad_deleted">Жарнама жок кылынды</string>
-
-    <!-- Добавить объявление -->
+    <!--  Добавить объявление  -->
     <string name="add_ad_title">Жарнама кошуу</string>
     <string name="add_ad_edit_title">Өзгөртүү</string>
     <string name="add_ad_category">Категория *</string>
@@ -80,8 +73,7 @@
     <string name="add_ad_error_title">Аталышты киргизиңиз</string>
     <string name="add_ad_error_desc">Сүрөттөмөнү киргизиңиз</string>
     <string name="add_ad_error_price">Баасын киргизиңиз</string>
-
-    <!-- Поиск -->
+    <!--  Поиск  -->
     <string name="search_title">Издөө</string>
     <string name="search_hint">Жарнамаларды издөө...</string>
     <string name="search_category">Категория</string>
@@ -89,16 +81,14 @@
     <string name="search_loading">Жүктөлүүдө...</string>
     <string name="search_empty">Эч нерсе табылган жок</string>
     <string name="search_empty_hint">Суроону же чыпкаларды өзгөртүп көрүңүз</string>
-
-    <!-- Чат -->
+    <!--  Чат  -->
     <string name="chat_empty">Баарлашууну баштаңыз. Биринчи кабарды жазыңыз!</string>
     <string name="chat_hint">Кабар...</string>
     <string name="chat_seller">Сатуучу</string>
     <string name="chats_title">Кабарлашуулар</string>
     <string name="chats_empty_title">Кабарлашуулар жок</string>
     <string name="chats_empty_desc">Сатуучуга же сатып алуучуга жазганыңызда, кабарлашуулар бул жерде чыгат</string>
-
-    <!-- Профиль -->
+    <!--  Профиль  -->
     <string name="profile_user_default">Колдонуучу</string>
     <string name="profile_phone_default">+996 — — —</string>
     <string name="profile_my_ads">Менин жарнамаларым</string>
@@ -120,27 +110,23 @@
     <string name="profile_logout_confirm">Чыгуу</string>
     <string name="profile_lang_ru">Орусча</string>
     <string name="profile_lang_ky">Кыргызча</string>
-
-    <!-- Мои объявления -->
+    <!--  Мои объявления  -->
     <string name="my_ads_title">Менин жарнамаларым</string>
     <string name="my_ads_count_prefix">Жарнамалар саны: </string>
     <string name="my_ads_empty_title">Азырынча жарнамаңыз жок</string>
     <string name="my_ads_empty_hint">Кошуу үчүн + баскычын басыңыз</string>
     <string name="my_ads_add_btn">Жарнама кошуу</string>
-
-    <!-- Избранное -->
+    <!--  Избранное  -->
     <string name="favorites_title">Сакталгандарым</string>
     <string name="favorites_empty_title">Сакталган жарнамалар жок</string>
     <string name="favorites_empty_hint">Жарнамадагы ♡ баскычын басып, сактаңыз</string>
     <string name="favorites_removed">Сакталгандардан өчүрүлдү</string>
     <string name="favorites_added">Сакталгандарга кошулду ❤️</string>
-
-    <!-- Уведомления -->
+    <!--  Уведомления  -->
     <string name="notif_title">Билдирмелер</string>
     <string name="notif_empty_title">Билдирмелер жок</string>
     <string name="notif_empty_hint">Жарнамаларыңызга жооптор келгенде бул жерде чыгат</string>
-
-    <!-- Редактирование профиля -->
+    <!--  Редактирование профиля  -->
     <string name="edit_profile_title">Профилди өзгөртүү</string>
     <string name="edit_profile_name_label">Аты</string>
     <string name="edit_profile_name_hint">Атыңызды киргизиңиз</string>
@@ -151,21 +137,18 @@
     <string name="edit_profile_created">Профиль түзүлдү ✅</string>
     <string name="edit_profile_name_error">Атыңызды киргизиңиз</string>
     <string name="edit_profile_photo_soon">Сүрөт жүктөө — жакында</string>
-
-    <!-- Сплэш -->
+    <!--  Сплэш  -->
     <string name="splash_tagline">КЫРГЫЗСТАНДЫН МАРКЕТПЛЕЙСИ</string>
     <string name="splash_choose_lang">Выберите язык / Тилди тандаңыз</string>
-    <string name="splash_btn_ru">🇷🇺  Орусча</string>
-    <string name="splash_btn_ky">🇰🇬  Кыргызча</string>
-
-    <!-- Навигация -->
+    <string name="splash_btn_ru">🇷🇺 Орусча</string>
+    <string name="splash_btn_ky">🇰🇬 Кыргызча</string>
+    <!--  Навигация  -->
     <string name="nav_home">Башкы бет</string>
     <string name="nav_search">Издөө</string>
     <string name="nav_add">Кошуу</string>
     <string name="nav_chats">Кабарлар</string>
     <string name="nav_profile">Профиль</string>
-
-    <!-- Общие -->
+    <!--  Общие  -->
     <string name="btn_cancel">Жокко чыгаруу</string>
     <string name="btn_delete">Жок кылуу</string>
     <string name="loading">Жүктөлүүдө...</string>
@@ -175,8 +158,7 @@
     <string name="error_fill_all_fields">Бардык талааларды толтуруңуз</string>
     <string name="error_ad_not_found">Ката: жарнама табылган жок</string>
     <string name="error_permission_denied">Мүмкүнчүлүк жок. Firestore эрежелерин текшериңиз.</string>
-
-    <!-- Дополнительные строки -->
+    <!--  Дополнительные строки  -->
     <string name="price_negotiable_short">Макулдашуу боюнча</string>
     <string name="currency_som"> сом</string>
     <string name="time_just_now">жаңы эле</string>
@@ -198,8 +180,7 @@
     <string name="total_ads">Жарнамалар саны: </string>
     <string name="publishing">Жарыяланууда...</string>
     <string name="saving">Сакталууда...</string>
-
-    <!-- Настройки -->
+    <!--  Настройки  -->
     <string name="settings_title">Жөндөөлөр</string>
     <string name="settings_section_notifications">БИЛДИРМЕЛЕР</string>
     <string name="settings_section_privacy">КУПУЯЛЫК</string>
@@ -213,8 +194,7 @@
     <string name="settings_clear_cache">Кэшти тазалоо</string>
     <string name="settings_clear_cache_msg">Убактылуу файлдарды тазалайбызбы?</string>
     <string name="settings_cache_cleared">Кэш тазаланды ✅</string>
-
-    <!-- Поддержка -->
+    <!--  Поддержка  -->
     <string name="support_title">Колдоо</string>
     <string name="support_faq_title">Көп берилүүчү суроолор</string>
     <string name="support_faq1_q">Керектүү товарды кантип табуу керек?</string>
@@ -229,7 +209,7 @@
     <string name="support_faq5_a">Өз жарнамаңызды ачыңыз. Баракчанын астында «Өзгөртүү» жана «Жок кылуу» баскычтары чыгат — аларды жарнаманын ээси гана көрөт. Бардык жарнамаларды «Профиль → Менин жарнамаларым» бөлүмүнөн табуу болот.</string>
     <string name="support_contact_title">Биз менен байланышуу</string>
     <string name="support_contact_desc">Жооп таба алган жоксузбу? Бизге жазыңыз — 24 саат ичинде жардам беребиз.</string>
-    <string name="support_btn_email">✉️  Email жазуу</string>
-    <string name="support_btn_whatsapp">💬  WhatsApp</string>
-
+    <string name="support_btn_email">✉️ Email жазуу</string>
+    <string name="support_btn_whatsapp">💬 WhatsApp</string>
+    <string name="sms_sent_toast">SMS жөнөтүлдү ✅</string>
 </resources>

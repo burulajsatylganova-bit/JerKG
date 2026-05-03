@@ -1,5 +1,8 @@
 package com.aimak.marketplace.ui.profile;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.util.Base64;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -79,10 +82,35 @@ public class ProfileFragment extends Fragment {
                 .collection("users").document(user.getUid()).get()
                 .addOnSuccessListener(doc -> {
                     if (binding == null) return;
-                    String name = doc.exists() ? doc.getString("name") : null;
+                    String name  = doc.exists() ? doc.getString("name")       : null;
+                    String photo = doc.exists() ? doc.getString("photoBase64") : null;
+
                     binding.tvName.setText(
                             (name != null && !name.isEmpty()) ? name
                                     : getString(R.string.profile_user_default));
+
+                    // Показываем инициал в аватаре
+                    if (name != null && !name.isEmpty()) {
+                        binding.tvAvatarLetter.setText(
+                                String.valueOf(name.charAt(0)).toUpperCase());
+                    }
+
+                    // Если есть фото — показываем его
+                    if (photo != null && !photo.isEmpty()) {
+                        try {
+                            String data = photo.replace("data:image/jpeg;base64,", "");
+                            byte[] bytes = Base64.decode(data, Base64.NO_WRAP);
+                            Bitmap bmp = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+                            if (bmp != null) {
+                                binding.ivAvatar.setImageBitmap(bmp);
+                                binding.ivAvatar.setVisibility(android.view.View.VISIBLE);
+                                binding.tvAvatarLetter.setVisibility(android.view.View.GONE);
+                            }
+                        } catch (Exception e) { /* показываем букву */ }
+                    } else {
+                        binding.ivAvatar.setVisibility(android.view.View.GONE);
+                        binding.tvAvatarLetter.setVisibility(android.view.View.VISIBLE);
+                    }
                 });
     }
 

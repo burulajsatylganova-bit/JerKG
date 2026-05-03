@@ -1443,6 +1443,8 @@ color browser_actions_bg_grey
 color browser_actions_divider_color
 color browser_actions_text_color
 color browser_actions_title_color
+color bubble_received
+color bubble_received_text
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -1507,8 +1509,12 @@ color error_color_material_light
 color error_red
 color foreground_material_dark
 color foreground_material_light
+color header_bg
+color header_subtitle
+color header_text
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2176,6 +2182,9 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color spinner_bg
+color spinner_stroke
+color spinner_text
 color success_green
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
@@ -3547,12 +3556,14 @@ id ivCategoryIcon
 id ivFavorite
 id ivNoPhoto
 id ivPhoto
+id ivProfilePhoto
 id ivRemovePhoto
 id ivSelectedPhoto
 id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layoutAvatar
 id layoutEmpty
 id layoutGuestActions
 id layoutLanguage
@@ -3873,6 +3884,8 @@ id tvPhoneHint
 id tvPhoneLabel
 id tvPhotoCount
 id tvPrice
+id tvReadAt
+id tvReadStatus
 id tvRegion
 id tvResultCount
 id tvTime
@@ -4505,6 +4518,7 @@ string settings_title
 string settings_version
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
+string sms_sent_toast
 string splash_btn_ky
 string splash_btn_ru
 string splash_choose_lang
@@ -4536,6 +4550,7 @@ string time_just_now
 string time_min_ago
 string time_yesterday
 string total_ads
+style AimakSpinner
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

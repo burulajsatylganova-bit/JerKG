@@ -40,7 +40,7 @@
                 android:id="@+id/spinnerCategory"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
-                android:background="@drawable/bg_spinner"
+                style="@style/AimakSpinner"
                 android:paddingHorizontal="12dp"
                 android:layout_marginBottom="16dp" />
 
@@ -54,10 +54,10 @@
                 android:layout_marginBottom="4dp" />
 
             <Spinner
+                style="@style/AimakSpinner"
                 android:id="@+id/spinnerRegion"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
-                android:background="@drawable/bg_spinner"
                 android:paddingHorizontal="12dp"
                 android:layout_marginBottom="16dp" />
 

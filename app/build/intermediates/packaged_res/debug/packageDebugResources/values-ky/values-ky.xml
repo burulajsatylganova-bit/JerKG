@@ -166,12 +166,13 @@
     <string name="settings_show_phone_hint">Сатып алуучулар сиздин номерди көрөт</string>
     <string name="settings_title">Жөндөөлөр</string>
     <string name="settings_version">Колдонмонун версиясы</string>
-    <string name="splash_btn_ky">🇰🇬  Кыргызча</string>
-    <string name="splash_btn_ru">🇷🇺  Орусча</string>
+    <string name="sms_sent_toast">SMS жөнөтүлдү ✅</string>
+    <string name="splash_btn_ky">🇰🇬 Кыргызча</string>
+    <string name="splash_btn_ru">🇷🇺 Орусча</string>
     <string name="splash_choose_lang">Выберите язык / Тилди тандаңыз</string>
     <string name="splash_tagline">КЫРГЫЗСТАНДЫН МАРКЕТПЛЕЙСИ</string>
-    <string name="support_btn_email">✉️  Email жазуу</string>
-    <string name="support_btn_whatsapp">💬  WhatsApp</string>
+    <string name="support_btn_email">✉️ Email жазуу</string>
+    <string name="support_btn_whatsapp">💬 WhatsApp</string>
     <string name="support_contact_desc">Жооп таба алган жоксузбу? Бизге жазыңыз — 24 саат ичинде жардам беребиз.</string>
     <string name="support_contact_title">Биз менен байланышуу</string>
     <string name="support_faq1_a">Башкы экрандын жогорусундагы издөө сабын колдонуңуз. Товардын атын же ачкыч сөздү киргизиңиз. Категория жана аймак боюнча да чыпкалоого болот.</string>

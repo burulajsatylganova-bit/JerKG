@@ -12,11 +12,11 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="#1A6EFF"
+        android:background="@color/header_bg"
         app:title="Мои объявления"
-        app:titleTextColor="#FFFFFF"
+        app:titleTextColor="@color/header_text"
         app:navigationIcon="@drawable/ic_arrow_back"
-        app:navigationIconTint="#FFFFFF" />
+        app:navigationIconTint="@color/header_text" />
 
     <!-- Счётчик -->
     <TextView

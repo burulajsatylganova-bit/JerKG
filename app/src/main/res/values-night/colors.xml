@@ -1,25 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Бренд — синий остаётся, но чуть светлее для видимости на тёмном -->
+    <!--  Бренд — синий остаётся, но чуть светлее для видимости на тёмном  -->
     <color name="brand_blue">#4D8EFF</color>
     <color name="brand_blue_dark">#1A6EFF</color>
     <color name="brand_emerald">#00E5AA</color>
     <color name="brand_dark">#E8EDF5</color>
     <color name="brand_mid">#B0BCCF</color>
-
-    <!-- Фон — тёмный -->
+    <!--  Фон — тёмный  -->
     <color name="background_primary">#0D1117</color>
     <color name="background_card">#161B22</color>
-
-    <!-- Текст — светлый -->
+    <!--  Текст — светлый  -->
     <color name="text_primary">#E8EDF5</color>
     <color name="text_secondary">#8B949E</color>
     <color name="text_tertiary">#6E7681</color>
-
-    <!-- Другие -->
+    <!--  Шапки в тёмной теме  -->
+    <color name="header_bg">#161B22</color>
+    <color name="header_text">#E8EDF5</color>
+    <color name="header_subtitle">#8B949E</color>
+    <!--  Другие  -->
     <color name="border_color">#21262D</color>
     <color name="badge_blue_bg">#1A2D4A</color>
     <color name="badge_green_bg">#0D2B20</color>
     <color name="error_red">#FF453A</color>
     <color name="success_green">#00E5AA</color>
+    <color name="bubble_received">#1E2D3D</color>
+    <color name="bubble_received_text">#E8EDF5</color>
+    <color name="spinner_bg">#1E2530</color>
+    <color name="spinner_stroke">#30363D</color>
+    <color name="spinner_text">#E8EDF5</color>
+    <color name="ic_launcher_background">#1A6EFF</color>
 </resources>

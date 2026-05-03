@@ -4,6 +4,7 @@ package com.aimak.marketplace.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -52,7 +53,13 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final CircleImageView ivAvatar;
 
   @NonNull
+  public final FrameLayout layoutAvatar;
+
+  @NonNull
   public final SwitchCompat switchDarkTheme;
+
+  @NonNull
+  public final TextView tvAvatarLetter;
 
   @NonNull
   public final TextView tvCurrentLang;
@@ -77,7 +84,8 @@ public final class FragmentProfileBinding implements ViewBinding {
       @NonNull LinearLayout itemFavorites, @NonNull LinearLayout itemLanguage,
       @NonNull LinearLayout itemMyAds, @NonNull LinearLayout itemNotifications,
       @NonNull LinearLayout itemSettings, @NonNull LinearLayout itemSupport,
-      @NonNull CircleImageView ivAvatar, @NonNull SwitchCompat switchDarkTheme,
+      @NonNull CircleImageView ivAvatar, @NonNull FrameLayout layoutAvatar,
+      @NonNull SwitchCompat switchDarkTheme, @NonNull TextView tvAvatarLetter,
       @NonNull TextView tvCurrentLang, @NonNull TextView tvFavCount, @NonNull TextView tvMyAdsCount,
       @NonNull TextView tvName, @NonNull TextView tvNotifCount, @NonNull TextView tvPhone) {
     this.rootView = rootView;
@@ -90,7 +98,9 @@ public final class FragmentProfileBinding implements ViewBinding {
     this.itemSettings = itemSettings;
     this.itemSupport = itemSupport;
     this.ivAvatar = ivAvatar;
+    this.layoutAvatar = layoutAvatar;
     this.switchDarkTheme = switchDarkTheme;
+    this.tvAvatarLetter = tvAvatarLetter;
     this.tvCurrentLang = tvCurrentLang;
     this.tvFavCount = tvFavCount;
     this.tvMyAdsCount = tvMyAdsCount;
@@ -180,9 +190,21 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.layoutAvatar;
+      FrameLayout layoutAvatar = ViewBindings.findChildViewById(rootView, id);
+      if (layoutAvatar == null) {
+        break missingId;
+      }
+
       id = R.id.switchDarkTheme;
       SwitchCompat switchDarkTheme = ViewBindings.findChildViewById(rootView, id);
       if (switchDarkTheme == null) {
+        break missingId;
+      }
+
+      id = R.id.tvAvatarLetter;
+      TextView tvAvatarLetter = ViewBindings.findChildViewById(rootView, id);
+      if (tvAvatarLetter == null) {
         break missingId;
       }
 
@@ -224,8 +246,8 @@ public final class FragmentProfileBinding implements ViewBinding {
 
       return new FragmentProfileBinding((NestedScrollView) rootView, btnEditProfile, btnLogout,
           itemFavorites, itemLanguage, itemMyAds, itemNotifications, itemSettings, itemSupport,
-          ivAvatar, switchDarkTheme, tvCurrentLang, tvFavCount, tvMyAdsCount, tvName, tvNotifCount,
-          tvPhone);
+          ivAvatar, layoutAvatar, switchDarkTheme, tvAvatarLetter, tvCurrentLang, tvFavCount,
+          tvMyAdsCount, tvName, tvNotifCount, tvPhone);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

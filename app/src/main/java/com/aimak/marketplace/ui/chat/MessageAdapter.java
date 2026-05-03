@@ -17,11 +17,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-
 public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageViewHolder> {
 
     private static final int VIEW_TYPE_RECEIVED = 0;
-    private static final int VIEW_TYPE_SENT = 1;
+    private static final int VIEW_TYPE_SENT     = 1;
 
     private List<Message> messages = new ArrayList<>();
     private final String currentUid;
@@ -34,18 +33,18 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
 
     @Override
     public int getItemViewType(int position) {
-        Message msg = messages.get(position);
-        return currentUid.equals(msg.getSenderId()) ? VIEW_TYPE_SENT : VIEW_TYPE_RECEIVED;
+        return currentUid.equals(messages.get(position).getSenderId())
+                ? VIEW_TYPE_SENT : VIEW_TYPE_RECEIVED;
     }
 
     @NonNull
     @Override
     public MessageViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        int layoutRes = (viewType == VIEW_TYPE_SENT)
+        int layout = viewType == VIEW_TYPE_SENT
                 ? R.layout.item_message_sent
                 : R.layout.item_message_received;
-        View view = LayoutInflater.from(parent.getContext()).inflate(layoutRes, parent, false);
-        return new MessageViewHolder(view);
+        View view = LayoutInflater.from(parent.getContext()).inflate(layout, parent, false);
+        return new MessageViewHolder(view, viewType == VIEW_TYPE_SENT);
     }
 
     @Override
@@ -63,16 +62,44 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
 
     class MessageViewHolder extends RecyclerView.ViewHolder {
         TextView tvText, tvTime;
+        // Только у исходящих
+        TextView tvReadStatus, tvReadAt;
+        boolean isSent;
 
-        MessageViewHolder(@NonNull View itemView) {
+        MessageViewHolder(@NonNull View itemView, boolean isSent) {
             super(itemView);
-            tvText = itemView.findViewById(R.id.tvMessageText);
-            tvTime = itemView.findViewById(R.id.tvMessageTime);
+            this.isSent    = isSent;
+            tvText         = itemView.findViewById(R.id.tvMessageText);
+            tvTime         = itemView.findViewById(R.id.tvMessageTime);
+            if (isSent) {
+                tvReadStatus = itemView.findViewById(R.id.tvReadStatus);
+                tvReadAt     = itemView.findViewById(R.id.tvReadAt);
+            }
         }
 
-        void bind(Message message) {
-            tvText.setText(message.getText());
-            tvTime.setText(timeFormat.format(new Date(message.getCreatedAt())));
+        void bind(Message msg) {
+            tvText.setText(msg.getText());
+            tvTime.setText(timeFormat.format(new Date(msg.getCreatedAt())));
+
+            if (isSent && tvReadStatus != null) {
+                if (msg.isRead()) {
+                    // ✅✅ Прочитано — двойная галочка синяя
+                    tvReadStatus.setText("✓✓");
+                    tvReadStatus.setTextColor(0xFFADD8FF);
+
+                    // Показываем время прочтения
+                    if (msg.getReadAt() > 0 && tvReadAt != null) {
+                        tvReadAt.setVisibility(View.VISIBLE);
+                        tvReadAt.setText("прочитано в "
+                                + timeFormat.format(new Date(msg.getReadAt())));
+                    }
+                } else {
+                    // ✓ Отправлено — одна галочка серая
+                    tvReadStatus.setText("✓");
+                    tvReadStatus.setTextColor(0xCCFFFFFF);
+                    if (tvReadAt != null) tvReadAt.setVisibility(View.GONE);
+                }
+            }
         }
     }
 }

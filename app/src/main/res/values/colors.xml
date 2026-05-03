@@ -1,27 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Файл: app/src/main/res/values/colors.xml -->
-<!-- Цвета соответствуют дизайну из HTML макета JER KG -->
 <resources>
-    <!-- Основные цвета бренда -->
+    <!--  Основные цвета бренда  -->
     <color name="brand_blue">#1A6EFF</color>
     <color name="brand_blue_dark">#0052D4</color>
     <color name="brand_emerald">#00C896</color>
     <color name="brand_dark">#0A1628</color>
     <color name="brand_mid">#1E2D4A</color>
-
-    <!-- Фон -->
+    <!--  Фон  -->
     <color name="background_primary">#F7F9FC</color>
     <color name="background_card">#FFFFFF</color>
-
-    <!-- Текст -->
+    <!--  Текст  -->
     <color name="text_primary">#0A1628</color>
     <color name="text_secondary">#4A5568</color>
     <color name="text_tertiary">#8A94A6</color>
-
-    <!-- Другие -->
+    <!--  Другие  -->
     <color name="border_color">#E8EDF5</color>
     <color name="badge_blue_bg">#E8F0FF</color>
     <color name="badge_green_bg">#E0F9F1</color>
     <color name="error_red">#FF3B30</color>
     <color name="success_green">#00C896</color>
+    <color name="header_bg">#1A6EFF</color>
+    <color name="header_text">#FFFFFF</color>
+    <color name="header_subtitle">#CCE0FF</color>
+    <color name="bubble_received">#F0F4FF</color>
+    <color name="bubble_received_text">#0A1628</color>
+    <color name="spinner_bg">#FFFFFF</color>
+    <color name="spinner_stroke">#E0E6F0</color>
+    <color name="spinner_text">#0A1628</color>
+    <color name="ic_launcher_background">#1A6EFF</color>
 </resources>

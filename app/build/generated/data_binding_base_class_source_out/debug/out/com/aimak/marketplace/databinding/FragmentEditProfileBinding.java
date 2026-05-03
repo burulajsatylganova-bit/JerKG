@@ -16,6 +16,7 @@ import com.aimak.marketplace.R;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
+import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -34,6 +35,9 @@ public final class FragmentEditProfileBinding implements ViewBinding {
   public final TextInputEditText etName;
 
   @NonNull
+  public final CircleImageView ivProfilePhoto;
+
+  @NonNull
   public final ProgressBar progressBar;
 
   @NonNull
@@ -50,13 +54,15 @@ public final class FragmentEditProfileBinding implements ViewBinding {
 
   private FragmentEditProfileBinding(@NonNull NestedScrollView rootView,
       @NonNull TextView btnChangePhoto, @NonNull MaterialButton btnSave,
-      @NonNull TextInputEditText etName, @NonNull ProgressBar progressBar,
-      @NonNull Spinner spinnerRegion, @NonNull MaterialToolbar toolbar,
-      @NonNull TextView tvAvatarLetter, @NonNull TextView tvPhoneLabel) {
+      @NonNull TextInputEditText etName, @NonNull CircleImageView ivProfilePhoto,
+      @NonNull ProgressBar progressBar, @NonNull Spinner spinnerRegion,
+      @NonNull MaterialToolbar toolbar, @NonNull TextView tvAvatarLetter,
+      @NonNull TextView tvPhoneLabel) {
     this.rootView = rootView;
     this.btnChangePhoto = btnChangePhoto;
     this.btnSave = btnSave;
     this.etName = etName;
+    this.ivProfilePhoto = ivProfilePhoto;
     this.progressBar = progressBar;
     this.spinnerRegion = spinnerRegion;
     this.toolbar = toolbar;
@@ -109,6 +115,12 @@ public final class FragmentEditProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.ivProfilePhoto;
+      CircleImageView ivProfilePhoto = ViewBindings.findChildViewById(rootView, id);
+      if (ivProfilePhoto == null) {
+        break missingId;
+      }
+
       id = R.id.progressBar;
       ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
       if (progressBar == null) {
@@ -140,7 +152,8 @@ public final class FragmentEditProfileBinding implements ViewBinding {
       }
 
       return new FragmentEditProfileBinding((NestedScrollView) rootView, btnChangePhoto, btnSave,
-          etName, progressBar, spinnerRegion, toolbar, tvAvatarLetter, tvPhoneLabel);
+          etName, ivProfilePhoto, progressBar, spinnerRegion, toolbar, tvAvatarLetter,
+          tvPhoneLabel);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

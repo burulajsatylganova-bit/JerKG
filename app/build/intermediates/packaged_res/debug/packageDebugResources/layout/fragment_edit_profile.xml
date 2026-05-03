@@ -16,11 +16,11 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:background="#1A6EFF"
+            android:background="@color/header_bg"
             app:title="Редактировать профиль"
-            app:titleTextColor="#FFFFFF"
+            app:titleTextColor="@color/header_text"
             app:navigationIcon="@drawable/ic_arrow_back"
-            app:navigationIconTint="#FFFFFF" />
+            app:navigationIconTint="@color/header_text" />
 
         <!-- Аватар -->
         <LinearLayout
@@ -46,7 +46,16 @@
                     android:textStyle="bold"
                     android:textColor="#FFFFFF"
                     android:gravity="center"
-                    android:background="#1A6EFF" />
+                    android:background="@color/header_bg" />
+
+                <!-- Фото профиля (поверх буквы, скрыто пока нет фото) -->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivProfilePhoto"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:visibility="gone"
+                    app:civ_border_width="3dp"
+                    app:civ_border_color="#FFFFFF" />
 
                 <!-- Кнопка смены фото -->
                 <TextView
@@ -126,7 +135,7 @@
                 android:id="@+id/spinnerRegion"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
-                android:background="@drawable/bg_spinner"
+                style="@style/AimakSpinner"
                 android:paddingStart="14dp"
                 android:paddingEnd="14dp"
                 android:textSize="15sp"

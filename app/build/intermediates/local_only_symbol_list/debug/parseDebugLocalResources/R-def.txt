@@ -11,7 +11,16 @@ color brand_blue_dark
 color brand_dark
 color brand_emerald
 color brand_mid
+color bubble_received
+color bubble_received_text
 color error_red
+color header_bg
+color header_subtitle
+color header_text
+color ic_launcher_background
+color spinner_bg
+color spinner_stroke
+color spinner_text
 color success_green
 color text_primary
 color text_secondary
@@ -124,8 +133,10 @@ id ivCategoryIcon
 id ivFavorite
 id ivNoPhoto
 id ivPhoto
+id ivProfilePhoto
 id ivRemovePhoto
 id ivSelectedPhoto
+id layoutAvatar
 id layoutEmpty
 id layoutGuestActions
 id layoutLanguage
@@ -195,6 +206,8 @@ id tvPhoneHint
 id tvPhoneLabel
 id tvPhotoCount
 id tvPrice
+id tvReadAt
+id tvReadStatus
 id tvRegion
 id tvResultCount
 id tvTime
@@ -403,6 +416,7 @@ string settings_show_phone
 string settings_show_phone_hint
 string settings_title
 string settings_version
+string sms_sent_toast
 string splash_btn_ky
 string splash_btn_ru
 string splash_choose_lang
@@ -430,5 +444,6 @@ string time_just_now
 string time_min_ago
 string time_yesterday
 string total_ads
+style AimakSpinner
 style Theme.JerKG
 style Theme.JerKG.Splash

@@ -11,9 +11,9 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="#1A6EFF"
+        android:background="@color/header_bg"
         app:title="Чаты"
-        app:titleTextColor="#FFFFFF" />
+        app:titleTextColor="@color/header_text" />
 
     <ProgressBar
         android:id="@+id/progressBar"

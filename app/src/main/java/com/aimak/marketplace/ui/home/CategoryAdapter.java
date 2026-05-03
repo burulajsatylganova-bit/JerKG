@@ -1,4 +1,3 @@
-
 package com.aimak.marketplace.ui.home;
 
 import android.graphics.Color;
@@ -100,19 +99,48 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
         }
 
         private void applySelection(boolean selected, String colorHex) {
+            int color;
+            try {
+                color = Color.parseColor(colorHex);
+            } catch (Exception e) {
+                color = Color.parseColor("#1A6EFF");
+            }
+
             if (selected) {
-                try {
-                    vBackground.setBackgroundTintList(
-                            android.content.res.ColorStateList.valueOf(Color.parseColor(colorHex)));
-                } catch (Exception e) {
-                    vBackground.setBackgroundTintList(
-                            android.content.res.ColorStateList.valueOf(Color.parseColor("#1A6EFF")));
-                }
-                tvName.setTextColor(Color.WHITE);
+                // ✅ Выбрано: цветная рамка + очень светлый фон того же цвета
+                // Делаем цвет фона прозрачным (10% от цвета)
+                int bgColor = Color.argb(30,
+                        Color.red(color), Color.green(color), Color.blue(color));
+                vBackground.getBackground().mutate()
+                        .setTint(bgColor);
+
+                // Рисуем рамку программно через обводку
+                android.graphics.drawable.GradientDrawable bg =
+                        new android.graphics.drawable.GradientDrawable();
+                bg.setShape(android.graphics.drawable.GradientDrawable.RECTANGLE);
+                bg.setCornerRadius(16f * itemView.getContext().getResources().getDisplayMetrics().density);
+                bg.setColor(bgColor);
+                bg.setStroke(Math.round(2f * itemView.getContext().getResources().getDisplayMetrics().density), color);
+                vBackground.setBackground(bg);
+
+                tvName.setTextColor(color);
+                tvName.setTypeface(null, android.graphics.Typeface.BOLD);
             } else {
-                vBackground.setBackgroundTintList(
-                        android.content.res.ColorStateList.valueOf(Color.parseColor("#F0F4FF")));
-                tvName.setTextColor(Color.parseColor("#4A5568"));
+                // Не выбрано: нейтральный светло-серый фон
+                android.graphics.drawable.GradientDrawable bg =
+                        new android.graphics.drawable.GradientDrawable();
+                bg.setShape(android.graphics.drawable.GradientDrawable.RECTANGLE);
+                bg.setCornerRadius(16f * itemView.getContext().getResources().getDisplayMetrics().density);
+                // Адаптируемся к тёмной теме
+                boolean isDark = (itemView.getContext().getResources().getConfiguration().uiMode
+                        & android.content.res.Configuration.UI_MODE_NIGHT_MASK)
+                        == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+                bg.setColor(isDark ? Color.parseColor("#1E2530") : Color.parseColor("#F0F4FF"));
+                bg.setStroke(0, Color.TRANSPARENT);
+                vBackground.setBackground(bg);
+
+                tvName.setTextColor(isDark ? Color.parseColor("#8B949E") : Color.parseColor("#4A5568"));
+                tvName.setTypeface(null, android.graphics.Typeface.NORMAL);
             }
         }
     }

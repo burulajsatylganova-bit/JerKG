@@ -37,6 +37,10 @@ public class LoginActivity extends AppCompatActivity {
 
         setupUI();
         observeViewModel();
+
+        // Ставим +996 по умолчанию
+        binding.etPhone.setText("+996");
+        binding.etPhone.setSelection(binding.etPhone.getText().length());
     }
 
     private void setupUI() {
@@ -78,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
         viewModel.codeSentLiveData.observe(this, codeSent -> {
             if (codeSent) {
                 showStep2();
-                Toast.makeText(this, "SMS отправлена", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.sms_sent_toast), Toast.LENGTH_SHORT).show();
             }
         });
 

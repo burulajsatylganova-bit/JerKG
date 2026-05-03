@@ -56,9 +56,9 @@
 30-->[androidx.core:core:1.9.0] C:\Users\Sultan\.gradle\caches\8.13\transforms\cf2f89070da57712801c4b8d19a23853\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 31
 32    <application
-32-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:10:5-28:19
+32-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:10:5-31:19
 33        android:name="com.aimak.marketplace.AimakApp"
-33-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:10:173-197
+33-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:13:71-95
 34        android:allowBackup="true"
 34-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:10:18-44
 35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -66,63 +66,63 @@
 36        android:debuggable="true"
 37        android:extractNativeLibs="false"
 38        android:icon="@drawable/ic_logo"
-38-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:10:45-77
+38-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:11:9-41
 39        android:label="@string/app_name"
-39-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:10:78-110
+39-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:12:9-41
 40        android:supportsRtl="true"
-40-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:10:111-137
+40-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:13:9-35
 41        android:testOnly="true"
 42        android:theme="@style/Theme.JerKG" >
-42-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:10:138-172
+42-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:13:36-70
 43
 44        <!-- SplashActivity — первый экран -->
 45        <activity
-45-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:12:9-17:20
+45-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:15:9-20:20
 46            android:name="com.aimak.marketplace.ui.splash.SplashActivity"
-46-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:12:19-59
+46-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:15:19-59
 47            android:exported="true"
-47-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:12:60-83
+47-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:15:60-83
 48            android:theme="@style/Theme.JerKG.Splash" >
-48-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:12:84-125
+48-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:15:84-125
 49            <intent-filter>
-49-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:13:13-16:29
+49-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:16:13-19:29
 50                <action android:name="android.intent.action.MAIN" />
-50-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:14:17-68
-50-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:14:25-66
+50-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:17:17-68
+50-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:17:25-66
 51
 52                <category android:name="android.intent.category.LAUNCHER" />
-52-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:15:17-76
-52-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:15:27-74
+52-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:18:17-76
+52-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:18:27-74
 53            </intent-filter>
 54        </activity>
 55        <!-- Авторизация -->
 56        <activity
-56-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:19:9-126
+56-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:22:9-126
 57            android:name="com.aimak.marketplace.ui.auth.LoginActivity"
-57-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:19:19-56
+57-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:22:19-56
 58            android:exported="false"
-58-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:19:57-81
+58-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:22:57-81
 59            android:windowSoftInputMode="adjustResize" />
-59-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:19:82-124
+59-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:22:82-124
 60        <!-- Главная активность -->
 61        <activity
-61-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:21:9-82
+61-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:24:9-82
 62            android:name="com.aimak.marketplace.ui.main.MainActivity"
-62-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:21:19-55
+62-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:24:19-55
 63            android:exported="false" />
-63-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:21:56-80
+63-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:24:56-80
 64        <!-- FCM Service для push уведомлений -->
 65        <service
-65-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:23:9-27:19
+65-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:26:9-30:19
 66            android:name="com.aimak.marketplace.service.AimakMessagingService"
-66-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:23:18-63
+66-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:26:18-63
 67            android:exported="false" >
-67-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:23:64-88
+67-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:26:64-88
 68            <intent-filter>
-68-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:24:13-26:29
+68-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:27:13-29:29
 69                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-69-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:25:17-77
-69-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:25:25-75
+69-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:28:17-77
+69-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:28:25-75
 70            </intent-filter>
 71        </service>
 72
@@ -326,10 +326,10 @@
 177            android:exported="false" >
 177-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Sultan\.gradle\caches\8.13\transforms\dec2f2ad715bcac10943381f6f49ecfd\transformed\firebase-messaging-23.4.1\AndroidManifest.xml:49:13-37
 178            <intent-filter android:priority="-500" >
-178-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:24:13-26:29
+178-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:27:13-29:29
 179                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-179-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:25:17-77
-179-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:25:25-75
+179-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:28:17-77
+179-->C:\Users\Sultan\AndroidStudioProjects\Aimak\app\src\main\AndroidManifest.xml:28:25-75
 180            </intent-filter>
 181        </service>
 182

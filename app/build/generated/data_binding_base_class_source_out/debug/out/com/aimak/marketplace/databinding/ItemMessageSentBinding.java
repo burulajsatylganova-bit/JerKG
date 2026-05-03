@@ -25,11 +25,19 @@ public final class ItemMessageSentBinding implements ViewBinding {
   @NonNull
   public final TextView tvMessageTime;
 
+  @NonNull
+  public final TextView tvReadAt;
+
+  @NonNull
+  public final TextView tvReadStatus;
+
   private ItemMessageSentBinding(@NonNull LinearLayout rootView, @NonNull TextView tvMessageText,
-      @NonNull TextView tvMessageTime) {
+      @NonNull TextView tvMessageTime, @NonNull TextView tvReadAt, @NonNull TextView tvReadStatus) {
     this.rootView = rootView;
     this.tvMessageText = tvMessageText;
     this.tvMessageTime = tvMessageTime;
+    this.tvReadAt = tvReadAt;
+    this.tvReadStatus = tvReadStatus;
   }
 
   @Override
@@ -71,7 +79,20 @@ public final class ItemMessageSentBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemMessageSentBinding((LinearLayout) rootView, tvMessageText, tvMessageTime);
+      id = R.id.tvReadAt;
+      TextView tvReadAt = ViewBindings.findChildViewById(rootView, id);
+      if (tvReadAt == null) {
+        break missingId;
+      }
+
+      id = R.id.tvReadStatus;
+      TextView tvReadStatus = ViewBindings.findChildViewById(rootView, id);
+      if (tvReadStatus == null) {
+        break missingId;
+      }
+
+      return new ItemMessageSentBinding((LinearLayout) rootView, tvMessageText, tvMessageTime,
+          tvReadAt, tvReadStatus);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

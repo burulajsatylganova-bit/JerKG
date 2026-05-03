@@ -116,8 +116,12 @@ public class ChatRepository {
                 .whereEqualTo("read", false)
                 .get()
                 .addOnSuccessListener(snapshots -> {
+                    long now = System.currentTimeMillis();
                     for (DocumentSnapshot doc : snapshots.getDocuments()) {
-                        doc.getReference().update("read", true);
+                        java.util.Map<String, Object> updates = new java.util.HashMap<>();
+                        updates.put("read",   true);
+                        updates.put("readAt", now);
+                        doc.getReference().update(updates);
                     }
                 });
     }

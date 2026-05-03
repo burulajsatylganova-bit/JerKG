@@ -15,28 +15,48 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="130dp"
-            android:background="#1A6EFF"
+            android:background="@color/header_bg"
             android:padding="20dp">
 
             <!-- Аватар -->
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/ivAvatar"
+            <FrameLayout
+                android:id="@+id/layoutAvatar"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
-                android:src="@drawable/ic_profile"
                 android:layout_centerVertical="true"
-                android:layout_alignParentStart="true"
-                app:civ_border_width="2dp"
-                app:civ_border_color="#FFFFFF" />
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/tvAvatarLetter"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:text="А"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/header_text"
+                    android:gravity="center"
+                    android:background="#33888888" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivAvatar"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:visibility="gone"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FFFFFF" />
+
+            </FrameLayout>
 
             <!-- Имя и телефон -->
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_centerVertical="true"
-                android:layout_toEndOf="@id/ivAvatar"
-                android:layout_marginStart="16dp">
+                android:layout_toEndOf="@id/layoutAvatar"
+                android:layout_toStartOf="@id/btnEditProfile"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp">
 
                 <TextView
                     android:id="@+id/tvName"
@@ -45,7 +65,9 @@
                     android:text="@string/profile_user_default"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="#FFFFFF" />
+                    android:textColor="@color/header_text"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
 
                 <TextView
                     android:id="@+id/tvPhone"
@@ -53,7 +75,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/profile_phone_default"
                     android:textSize="13sp"
-                    android:textColor="#CCE0FF"
+                    android:textColor="@color/header_subtitle"
                     android:layout_marginTop="3dp" />
 
             </LinearLayout>
@@ -66,7 +88,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:src="@drawable/ic_edit"
-                android:background="#33FFFFFF"
+                android:background="#33888888"
                 android:padding="8dp"
                 android:layout_margin="4dp"
                 android:clickable="true"

@@ -4,6 +4,7 @@ package com.aimak.marketplace.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -27,10 +28,10 @@ public final class ItemCategoryBinding implements ViewBinding {
   public final TextView tvCategoryName;
 
   @NonNull
-  public final View vCategoryBg;
+  public final FrameLayout vCategoryBg;
 
   private ItemCategoryBinding(@NonNull LinearLayout rootView, @NonNull ImageView ivCategoryIcon,
-      @NonNull TextView tvCategoryName, @NonNull View vCategoryBg) {
+      @NonNull TextView tvCategoryName, @NonNull FrameLayout vCategoryBg) {
     this.rootView = rootView;
     this.ivCategoryIcon = ivCategoryIcon;
     this.tvCategoryName = tvCategoryName;
@@ -77,7 +78,7 @@ public final class ItemCategoryBinding implements ViewBinding {
       }
 
       id = R.id.vCategoryBg;
-      View vCategoryBg = ViewBindings.findChildViewById(rootView, id);
+      FrameLayout vCategoryBg = ViewBindings.findChildViewById(rootView, id);
       if (vCategoryBg == null) {
         break missingId;
       }

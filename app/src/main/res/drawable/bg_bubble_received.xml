@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Файл: app/src/main/res/drawable/bg_bubble_received.xml -->
-<!-- Фон пузыря входящего сообщения — светло-серый -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-    <solid android:color="#F0F4FF" />
+    <solid android:color="@color/bubble_received" />
     <corners
         android:topLeftRadius="16dp"
         android:topRightRadius="16dp"

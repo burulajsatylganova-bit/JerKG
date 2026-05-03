@@ -1,19 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Файл: app/src/main/res/drawable/ic_logo.xml -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="44dp"
-    android:height="44dp"
-    android:viewportWidth="44"
-    android:viewportHeight="44">
-    <!-- Капля/метка местоположения -->
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M22,4C13.16,4 6,11.16 6,20C6,26.48 9.84,32.04 15.4,34.68L22,40L28.6,34.68C34.16,32.04 38,26.48 38,20C38,11.16 30.84,4 22,4Z"
-        android:fillAlpha="0.9"/>
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="680"
+    android:viewportHeight="680">
+
+    <!-- Фон -->
     <path
         android:fillColor="#1A6EFF"
-        android:pathData="M22,13C17.58,13 14,16.58 14,21C14,25.42 17.58,29 22,29C26.42,29 30,25.42 30,21C30,16.58 26.42,13 22,13Z"/>
+        android:pathData="M160,40 L520,40 Q640,40 640,160 L640,520 Q640,640 520,640 L160,640 Q40,640 40,520 L40,160 Q40,40 160,40 Z"/>
+
+    <!-- Блик -->
+    <path
+        android:fillColor="#1FFFFFFF"
+        android:pathData="M140,160 Q340,80 540,160 Q440,100 340,100 Q240,100 140,160 Z"/>
+
+    <!-- Ручка сумки -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="28"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M240,310 Q240,220 340,220 Q440,220 440,310"/>
+
+    <!-- Тело сумки -->
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M22,18C20.34,18 19,19.34 19,21C19,22.66 20.34,24 22,24C23.66,24 25,22.66 25,21C25,19.34 23.66,18 22,18Z"/>
+        android:pathData="M190,300 L490,300 Q514,300 514,324 L514,540 Q514,564 490,564 L190,564 Q166,564 166,540 L166,324 Q166,300 190,300 Z"/>
+
+    <!-- Замок сумки -->
+    <path
+        android:fillColor="#D0DCFF"
+        android:pathData="M315,296 L365,296 Q375,296 375,306 L375,316 Q375,316 340,316 Q305,316 305,316 L305,306 Q305,296 315,296 Z"/>
+
+    <!-- Горизонтальная линия на сумке -->
+    <path
+        android:strokeColor="#E8F0FF"
+        android:strokeWidth="3"
+        android:fillColor="#00000000"
+        android:pathData="M166,370 L514,370"/>
+
+    <!-- Ценник (повёрнутый) — фон -->
+    <path
+        android:fillColor="#FFD93D"
+        android:pathData="M358,322 L464,322 Q476,322 476,334 L476,398 Q476,410 464,410 L358,410 Q346,410 346,398 L346,334 Q346,322 358,322 Z"
+        android:pivotX="411"
+        android:pivotY="366"/>
+
+    <!-- Верёвочка ценника -->
+    <path
+        android:strokeColor="#FFD93D"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M358,340 Q340,320 322,300"/>
+
+    <!-- Дырочка ценника -->
+    <path
+        android:fillColor="#1A6EFF"
+        android:pathData="M370,340 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0"/>
+
+    <!-- Буква С (сом) на ценнике -->
+    <path
+        android:fillColor="#1A6EFF"
+        android:pathData="M430,348 Q415,342 405,355 Q395,368 400,383 Q405,398 420,400 Q435,402 445,392 L438,385 Q432,392 421,390 Q410,388 407,377 Q404,366 411,358 Q418,350 430,352 Z"/>
+
+    <!-- Галочка в круге -->
+    <path
+        android:fillColor="#FFD93D"
+        android:pathData="M230,412 m-18,0 a18,18 0 1,0 36,0 a18,18 0 1,0 -36,0"/>
+    <path
+        android:strokeColor="#1A6EFF"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000"
+        android:pathData="M221,430 L228,438 L242,420"/>
+
 </vector>

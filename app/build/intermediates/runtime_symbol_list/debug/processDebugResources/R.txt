@@ -1442,6 +1442,8 @@ int color browser_actions_bg_grey 0x7f050032
 int color browser_actions_divider_color 0x7f050033
 int color browser_actions_text_color 0x7f050034
 int color browser_actions_title_color 0x7f050035
+int color bubble_received 0x7f050324
+int color bubble_received_text 0x7f050325
 int color button_material_dark 0x7f050036
 int color button_material_light 0x7f050037
 int color cardview_dark_background 0x7f050038
@@ -1506,8 +1508,12 @@ int color error_color_material_light 0x7f050072
 int color error_red 0x7f050073
 int color foreground_material_dark 0x7f050074
 int color foreground_material_light 0x7f050075
+int color header_bg 0x7f050321
+int color header_subtitle 0x7f050322
+int color header_text 0x7f050323
 int color highlighted_text_material_dark 0x7f050076
 int color highlighted_text_material_light 0x7f050077
+int color ic_launcher_background 0x7f050329
 int color m3_appbar_overlay_color 0x7f050078
 int color m3_assist_chip_icon_tint_color 0x7f050079
 int color m3_assist_chip_stroke_color 0x7f05007a
@@ -2175,6 +2181,9 @@ int color secondary_text_default_material_dark 0x7f05030f
 int color secondary_text_default_material_light 0x7f050310
 int color secondary_text_disabled_material_dark 0x7f050311
 int color secondary_text_disabled_material_light 0x7f050312
+int color spinner_bg 0x7f050326
+int color spinner_stroke 0x7f050327
+int color spinner_text 0x7f050328
 int color success_green 0x7f050313
 int color switch_thumb_disabled_material_dark 0x7f050314
 int color switch_thumb_disabled_material_light 0x7f050315
@@ -3546,12 +3555,14 @@ int id ivCategoryIcon 0x7f080137
 int id ivFavorite 0x7f080138
 int id ivNoPhoto 0x7f080139
 int id ivPhoto 0x7f08013a
+int id ivProfilePhoto 0x7f0802a3
 int id ivRemovePhoto 0x7f08013b
 int id ivSelectedPhoto 0x7f08013c
 int id jumpToEnd 0x7f08013d
 int id jumpToStart 0x7f08013e
 int id labeled 0x7f08013f
 int id layout 0x7f080140
+int id layoutAvatar 0x7f0802a6
 int id layoutEmpty 0x7f080141
 int id layoutGuestActions 0x7f080142
 int id layoutLanguage 0x7f080143
@@ -3872,6 +3883,8 @@ int id tvPhoneHint 0x7f08027d
 int id tvPhoneLabel 0x7f08027e
 int id tvPhotoCount 0x7f08027f
 int id tvPrice 0x7f080280
+int id tvReadAt 0x7f0802a4
+int id tvReadStatus 0x7f0802a5
 int id tvRegion 0x7f080281
 int id tvResultCount 0x7f080282
 int id tvTime 0x7f080283
@@ -4504,6 +4517,7 @@ int string settings_title 0x7f12016e
 int string settings_version 0x7f12016f
 int string side_sheet_accessibility_pane_title 0x7f120170
 int string side_sheet_behavior 0x7f120171
+int string sms_sent_toast 0x7f120191
 int string splash_btn_ky 0x7f120172
 int string splash_btn_ru 0x7f120173
 int string splash_choose_lang 0x7f120174
@@ -4535,6 +4549,7 @@ int string time_just_now 0x7f12018d
 int string time_min_ago 0x7f12018e
 int string time_yesterday 0x7f12018f
 int string total_ads 0x7f120190
+int style AimakSpinner 0x7f130461
 int style AlertDialog_AppCompat 0x7f130000
 int style AlertDialog_AppCompat_Light 0x7f130001
 int style Animation_AppCompat_Dialog 0x7f130002
